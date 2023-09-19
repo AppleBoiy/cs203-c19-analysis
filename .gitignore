@@ -185,7 +185,6 @@ xcuserdata/
 
 ## dataset ##
 *.zip
-*.csv
 *.key
 
 ## logs ##
