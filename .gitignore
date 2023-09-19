@@ -191,5 +191,8 @@ xcuserdata/
 ## logs ##
 *.log
 
+## cache ##
+*__pycache__
+
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains,macos,visualstudiocode,xcode
 google_api.key
