@@ -1,14 +1,24 @@
-1.       CoronaVirus Covid-19 US Counties
-[dataset1](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties)
+# Coronavirus Covid-19 US Counties Dataset
 
-- 650510606	AppleBoiy	ชัยภัทร	ใจน่าน	ไอซ์
-- 650510654	KonGKerDvD	กังวานทรัพย์	แซ่ลี้	ก้อง
-- 650510671	PutterTh	ปองภพ	เชื้อประเสริฐศักดิ์	พัตเตอร์
+This dataset contains information about Coronavirus Covid-19 cases in various US counties.
 
-# Prerequisite
+## Contributors
 
-1. setup dataset
+- **AppleBoiy**
+  - Full Name: ชัยภัทร ใจน่าน
+  - GitHub: [AppleBoiy GitHub Profile](https://github.com/AppleBoiy)
+
+- **KonGKerDvD**
+  - Full Name: กังวานทรัพย์ แซ่ลี้ ก้อง
+  - GitHub: [KonGKerDvD GitHub Profile](https://github.com/KonGKerDvD)
+
+- **PutterTh**
+  - Full Name: ปองภพ เชื้อประเสริฐศักดิ์ พัตเตอร์
+  - GitHub: [PutterTh GitHub Profile](https://github.com/PutterTh)
+
+## Prerequisite
+
+Before using this dataset, please set it up using the provided `setup.sh` script:
+
 ```shell
-  ./setup.sh
-```
-
+./setup.sh
