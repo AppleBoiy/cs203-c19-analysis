@@ -183,4 +183,8 @@ xcuserdata/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+## dataset ##
+*.zip
+*.csv
+
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains,macos,visualstudiocode,xcode
