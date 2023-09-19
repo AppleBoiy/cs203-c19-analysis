@@ -4,3 +4,11 @@
 - 650510606	AppleBoiy	ชัยภัทร	ใจน่าน	ไอซ์
 - 650510654	KonGKerDvD	กังวานทรัพย์	แซ่ลี้	ก้อง
 - 650510671	PutterTh	ปองภพ	เชื้อประเสริฐศักดิ์	พัตเตอร์
+
+# Prerequisite
+
+1. setup dataset
+```shell
+  ./setup.sh
+```
+
