@@ -35,10 +35,7 @@ def get_response(lat, lon):
 
 
 def get_admin2_info():
-    df = pd.read_csv('../coronavirus-covid-19-pandemic-usa-counties.csv', sep=';')
+    df = pd.read_csv('../data/coronavirus-covid-19-pandemic-usa-counties.csv', sep=';')
     lost_admin2 = df[df['Admin 2 FIPS Code'].isnull()]
 
     print(f'Number of rows with missing Admin 2 FIPS Code: {len(lost_admin2)}')
-    print(lost_admin2.head())
-
-
