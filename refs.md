@@ -1,0 +1,2 @@
+1. [How to get address location from latitude and longitude in Google Map.?](https://stackoverflow.com/questions/19511597/how-to-get-address-location-from-latitude-and-longitude-in-google-map#:~:text=Simply%20pass%20latitude%2C%20longitude%20and,fetch%20your%20city%20from%20there.&text=Note%3A%20Ensure%20that%20no%20space,passed%20in%20the%20latlng%20parameter.)
+2. [get Google api key](https://developers.google.com/maps/documentation/geocoding/get-api-key)
