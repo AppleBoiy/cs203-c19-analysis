@@ -2,26 +2,15 @@ import os
 import glob
 import subprocess
 import logging
+import pandas as pd
 
 import prerequisites
 
 
-def get_data():
-    """
-    Get a list of CSV files in the 'data' directory.
-
-    Returns:
-        List[str]: List of CSV file paths.
-    """
-    directory_path = "data"
-    csv_files = glob.glob(os.path.join(directory_path, "*.csv"))
-    return csv_files
-
-
-class DataDownloader:
-    def __init__(self, debug=False):
-
+class Logger:
+    def __init__(self, debug=False, write=False):
         self.debug = debug
+        self.is_write = write
         self.logger = self.setup_logger()
 
     def setup_logger(self):
@@ -30,95 +19,90 @@ class DataDownloader:
 
         formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s')
 
-        # Create console handler and set level based on a debug flag
-        console_handler = logging.StreamHandler()
-        console_handler.setLevel(logging.DEBUG if self.debug else logging.INFO)
-        console_handler.setFormatter(formatter)
-        logger.addHandler(console_handler)
-
-        # Create file handler if debug mode is enabled
-        if self.debug:
+        if self.is_write:
             file_handler = logging.FileHandler('app.log')
-            file_handler.setLevel(logging.DEBUG)
             file_handler.setFormatter(formatter)
             logger.addHandler(file_handler)
-            return logger
-        return logging
+        elif self.debug:
+            stream_handler = logging.StreamHandler()
+            stream_handler.setFormatter(formatter)
+            logger.addHandler(stream_handler)
+
+        return logger
 
     def log(self, _type, message):
-        """
-        Log a message to the console.
+        if not self.debug:
+            return
 
-        Args:
-            _type (str): The type of message to log.
-            message (str): The message to log.
-        """
+        getattr(self.logger, _type)(message)
 
-        if _type == "info":
-            self.logger.info(message)
-        elif _type == "error":
-            self.logger.error(message)
-        elif _type == "debug":
-            self.logger.debug(message)
-        else:
-            self.logger.info(message)
 
-    def download_data(self):
-        """
-        Download data using a shell script.
+class DataDownloader(Logger):
+    def __init__(self, debug=False, write=False):
+        super().__init__(debug, write)
 
-        Raises:
-            subprocess.CalledProcessError: If the shell script fails.
-        """
-        script_path = "src/download.sh"
-
+    def download_data(self, script_path="src/download.sh"):
         try:
             output = subprocess.check_output(
                 ['bash', script_path],
                 stderr=subprocess.STDOUT,
                 universal_newlines=True
             )
-            self.logger.info("Downloaded data successfully.")
-            self.logger.debug(output)
+            self.log("info", "Downloaded data successfully.")
+            self.log("debug", output)
         except subprocess.CalledProcessError as e:
-            self.logger.error(f"Error running the shell script: {e}")
+            self.log("error", f"Error running the shell script: {e}")
 
     def start(self):
-        """
-        Start the data download and validation process.
-        """
         prerequisites.install_libraries()
-        data = get_data()
 
-        if data is None:
-            self.logger.info("Data not found. Downloading data...")
-
+        if not glob.glob(os.path.join("data", "*.csv")):
+            self.log("info", "Data not found. Downloading data...")
             self.download_data()
-            data = get_data()
 
-        excluded_files = ["data/validated.csv", "data/country_flips.csv"]
-        raw_data = [file for file in data if file not in excluded_files]
+        self.log("info", f"Validating {self.raw_data}...")
 
-        self.logger.info(f"Validating {raw_data[0]}...")
-
-        if "data/validated.csv" not in data:
-            status, df = prerequisites.create_validated_csv(raw_data[0], self.debug)
+        if not glob.glob(os.path.join("data", "validated.csv")):
+            status, df = self.create_validated_csv()
 
             if status == os.EX_OK and df is not None:
-                prompt = (
-                    f'Data was read successfully from {raw_data[0]}\n---'
-                    'Here is a sample of the data:'
-                    f'{df.head()}'
-                )
-                self.logger.info(prompt)
-
+                prompt = f'Data was read successfully from {self.raw_data}\n---' f'{df.head()}'
+                self.log("info", prompt)
             else:
-                self.logger.error("Error while validating data.")
+                self.log("error", "Error while validating data.")
         else:
-            self.logger.info("Validated data found. Skipping validation.")
+            self.log("info", "Validated data found. Skipping validation.")
+
+    def validate(self):
+        self.log('info', 'Validating data...')
+        df = pd.read_csv(self.raw_data, sep=';')
+        df.drop('Admin 2 FIPS Code', axis=1, inplace=True)
+
+        missing_rows = df[df.isnull().any(axis=1)]
+        self.log('info', f'Number of rows with missing values: {len(missing_rows)}')
+        self.log('debug', "Sample null:--\n---\n"+df.isnull().sum() + "\n---\n")
+
+        return df
+
+    def create_validated_csv(self):
+        self.log('info', 'Creating validated CSV...')
+        try:
+            df = self.validate()
+            df.to_csv(self.validated_csv, index=False)
+            self.log('info', 'Validated CSV created successfully.')
+            return os.EX_OK, df
+        except FileNotFoundError as e:
+            self.log('error', f'Error while creating validated CSV: {e}')
+
+    @property
+    def validated_csv(self):
+        return "data/validated.csv"
+
+    @property
+    def raw_data(self):
+        return "data/coronavirus-covid-19-pandemic-usa-counties.csv"
 
 
 if __name__ == "__main__":
-    # Set debug to True to enable logging, or False to disable it
-    data_downloader = DataDownloader(debug=True)
+    data_downloader = DataDownloader(debug=True, write=True)
     data_downloader.start()
