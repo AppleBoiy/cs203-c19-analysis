@@ -18,7 +18,19 @@ This dataset contains information about Coronavirus Covid-19 cases in various US
 
 ## Prerequisite
 
-Before using this dataset, please set it up using the provided `setup.sh` script:
+> For more information, please download by src/download.sh directly.
+  ```bash
+    bash src/download.sh
+  ```
 
-```shell
-./setup.sh
+Setup environment for this project by using `prerequisites.py` to install all required packages.
+    
+  ```bash
+  python3 prerequisites.py || python prerequisites.py
+  ```
+
+Before use dataset please run `setup.py` for verify and download dataset.
+
+  ```bash
+  python3 setup.py || python setup.py
+  ```
