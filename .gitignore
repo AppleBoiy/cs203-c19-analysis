@@ -188,5 +188,8 @@ xcuserdata/
 *.csv
 *.key
 
+## logs ##
+*.log
+
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains,macos,visualstudiocode,xcode
 google_api.key
