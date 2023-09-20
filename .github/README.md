@@ -35,7 +35,7 @@ usage restrictions, and other pertinent terms and conditions that may apply.
 
 The source code provided in this repository is intended solely for educational purposes.
 You are free to use, modify, and distribute the source code for educational non-commercial purposes.
-Please refer to the [LICENSE](LICENSE) for specific terms and conditions related to the educational use of the source code.
+Please refer to the [LICENSE](../LICENSE) for specific terms and conditions related to the educational use of the source code.
 
 ### Disclaimer:
 
