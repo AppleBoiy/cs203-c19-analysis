@@ -18,7 +18,7 @@ This dataset contains information about Coronavirus Covid-19 cases in various US
 
 ## Prerequisite
 
-> For more information, please download by src/download.sh directly.
+> For more information, please download dataset directly by `download.sh` script.
   ```bash
     bash src/download.sh
   ```

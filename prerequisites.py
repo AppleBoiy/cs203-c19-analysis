@@ -15,7 +15,8 @@ def install_libraries():
         'pandas',
         'numpy',
         'matplotlib',
-        'kaggle'
+        'kaggle',
+        'folium',
     ]
     for library in required_libraries:
         try:
@@ -24,3 +25,6 @@ def install_libraries():
         except subprocess.CalledProcessError as e:
             print(f'Error while installing {library}: {e}')
 
+
+if __name__ == '__main__':
+    install_libraries()
