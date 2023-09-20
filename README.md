@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Before using this project, please ensure you have the necessary prerequisites set up. You can find detailed instructions in the [Prerequisites.md](docs/prerequisites.md) file.
+Before using this project, please ensure you have the necessary prerequisites set up. You can find detailed instructions in the [prerequisites.md](docs/prerequisites.md).
 
 This README file is provided by the project authors for informational purposes only and does not grant any additional rights or permissions beyond those specified by the dataset's original licensing terms.
 
@@ -25,7 +25,7 @@ This README file is provided by the project authors for informational purposes o
 ### Dataset License:
 
 The use of the yasirabdaali/corona-virus-covid19-us-counties dataset in this project is subject to its own licensing terms and conditions,
-as detailed in the [DATASET-LICENSE](DATASET-LICENSE) file.
+as detailed in the [DATASET-LICENSE](DATASET-LICENSE).
 These terms are typically defined by the dataset creators or providers.
 Users of this dataset are required
 to refer to the original source or provider for comprehensive information regarding licensing,
@@ -35,7 +35,7 @@ usage restrictions, and other pertinent terms and conditions that may apply.
 
 The source code provided in this repository is intended solely for educational purposes.
 You are free to use, modify, and distribute the source code for educational non-commercial purposes.
-Please refer to the [LICENSE](LICENSE) file for specific terms and conditions related to the educational use of the source code.
+Please refer to the [LICENSE](LICENSE) for specific terms and conditions related to the educational use of the source code.
 
 ### Disclaimer:
 
