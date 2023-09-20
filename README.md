@@ -1,6 +1,10 @@
 # Coronavirus Covid-19 US Counties Dataset
 
-This dataset contains information about Coronavirus Covid-19 cases in various US counties.
+## Prerequisites
+
+Before using this project, please ensure you have the necessary prerequisites set up. You can find detailed instructions in the [Prerequisites.md](docs/prerequisites.md) file.
+
+This README file is provided by the project authors for informational purposes only and does not grant any additional rights or permissions beyond those specified by the dataset's original licensing terms.
 
 ## Contributors
 
@@ -16,21 +20,13 @@ This dataset contains information about Coronavirus Covid-19 cases in various US
   - Full Name: ปองภพ เชื้อประเสริฐศักดิ์ พัตเตอร์
   - GitHub: [PutterTh GitHub Profile](https://github.com/PutterTh)
 
-## Prerequisite
+## License and Disclaimer
 
-> For more information, please download dataset directly by `download.sh` script.
-  ```bash
-    bash src/download.sh
-  ```
+**License:** The yasirabdaali/corona-virus-covid19-us-counties dataset used in this project is subject to its own licensing terms and conditions, which are typically specified by the dataset creators or providers. Users of this dataset should refer to the original source or provider of the dataset for detailed information regarding its licensing, usage restrictions, and any other terms and conditions that may apply.
 
-Setup environment for this project by using `prerequisites.py` to install all required packages.
-    
-  ```bash
-  python3 prerequisites.py || python prerequisites.py
-  ```
+**Disclaimer:** The project authors (Covid-19US-CS203) do not claim ownership of the dataset and are not responsible for any disputes or issues related to its use. Users are encouraged to respect the dataset's licensing terms and give proper attribution to the dataset creators as required.
 
-Before use dataset please run `setup.py` for verify and download dataset.
+For more information about the yasirabdaali/corona-virus-covid19-us-counties, please visit the dataset's original source or provider.
 
-  ```bash
-  python3 setup.py || python setup.py
-  ```
+[Kaggle: yasirabdaali/corona-virus-covid19-us-counties](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties)
+
