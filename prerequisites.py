@@ -10,20 +10,15 @@ def is_library_installed(library_name):
 
 
 def install_libraries():
-    required_libraries = [
-        'requests',
-        'pandas',
-        'numpy',
-        'matplotlib',
-        'kaggle',
-        'folium',
-    ]
-    for library in required_libraries:
-        try:
-            if not is_library_installed(library):
-                subprocess.check_call(["python", '-m', 'pip', 'install', library])
-        except subprocess.CalledProcessError as e:
-            print(f'Error while installing {library}: {e}')
+    with open('requirements.txt') as f:
+        required_libraries = f.read().splitlines()
+
+        for library in required_libraries:
+            try:
+                if not is_library_installed(library):
+                    subprocess.check_call(["python", '-m', 'pip', 'install', library])
+            except subprocess.CalledProcessError as e:
+                print(f'Error while installing {library}: {e}')
 
 
 if __name__ == '__main__':

@@ -20,6 +20,12 @@ To set up the environment for this project, you need to install all the required
 python3 prerequisites.py || python prerequisites.py
 ```
 
+or install by pip
+
+```bash
+  python3 -m pip install -r requirements.txt
+```
+
 This script will install all the necessary packages and dependencies required for the project.
 
 ## 2. Verify and Download Dataset
