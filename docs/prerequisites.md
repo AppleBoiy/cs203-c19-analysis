@@ -23,7 +23,7 @@ python3 prerequisites.py || python prerequisites.py
 or install by pip
 
 ```bash
-  python3 -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt || python -m pip install -r requirements.txt
 ```
 
 This script will install all the necessary packages and dependencies required for the project.
