@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Before using this project, please ensure you have the necessary prerequisites set up. You can find detailed instructions in the [prerequisites.](docs/prerequisites.md)
+Before using this project, please ensure you have the necessary prerequisites set up. You can find detailed instructions in the [prerequisites.](../docs/prerequisites.md)
 
 This README file is provided by the project authors for informational purposes only and does not grant any additional rights or permissions beyond those specified by the dataset's original licensing terms.
 
