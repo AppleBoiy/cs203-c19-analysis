@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # this script downloads the data from kaggle
 
 mkdir -p "data" && data_dir="data"
