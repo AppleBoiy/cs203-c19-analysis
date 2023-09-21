@@ -25,7 +25,6 @@ class DataDownloader(Logger):
             self.log("error", f"Error running the shell script: {e}")
 
     def start(self):
-        prerequisites.install_libraries()
 
         if not glob.glob(os.path.join("data", "*.csv")):
             self.log("info", "Data not found. Downloading data...")
@@ -64,7 +63,7 @@ class DataDownloader(Logger):
             return os.EX_OK, df
         except FileNotFoundError as e:
             self.log('error', f'Error while creating validated CSV: {e}')
-            return os.EX_NOINPUT, None
+            return os.EX_OK, None
 
     @property
     def validated_csv(self):

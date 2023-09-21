@@ -194,6 +194,7 @@ xcuserdata/
 ## cache ##
 *__pycache__
 
+## test ##
 *test*
 
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains,macos,visualstudiocode,xcode
