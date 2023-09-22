@@ -1,10 +1,16 @@
+import os
+
 import pandas as pd
 import json
+import sys
 from urllib import request
 
 
 def google_key():
-    with open('../google_api.key', 'r') as f:
+    sys.path.append('/')
+    home = os.path.expanduser("~")
+    key_path = os.path.join(home, '.keys', 'google_map_api.key')
+    with open(key_path, 'r') as f:
         key = f.read()
     return key
 
@@ -26,16 +32,16 @@ def get_response(lat, lon):
     response = request.urlopen(url)
     data = json.loads(response.read())
 
+    print(data)
+
     if data['status'] == 'OK':
         return data['results']
 
-    else:
-        print(f'Error: {data["status"]}')
-        return None
+    raise PermissionError(f'{data["status"]}: {data["error_message"]}')
 
 
 def get_admin2_info():
-    df = pd.read_csv('../data/coronavirus-covid-19-pandemic-usa-counties.csv', sep=';')
+    df = pd.read_csv('../../data/coronavirus-covid-19-pandemic-usa-counties.csv', sep=';')
     lost_admin2 = df[df['Admin 2 FIPS Code'].isnull()]
 
     print(f'Number of rows with missing Admin 2 FIPS Code: {len(lost_admin2)}')
