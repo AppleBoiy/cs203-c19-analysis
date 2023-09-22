@@ -1,4 +1,10 @@
 # Coronavirus Covid-19 US Counties Dataset
+## Dataset Description
+
+The [Coronavirus Covid-19 US Counties Dataset](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties) is a dataset
+that contains the number of confirmed cases,
+deaths, and recovered cases of the coronavirus (COVID-19) in the United States of America.
+
 
 ## Prerequisites
 
@@ -8,24 +14,24 @@ This README file is provided by the project authors for informational purposes o
 
 ## Contributors
 
-- **AppleBoiy**
-  - Full Name: ชัยภัทร ใจน่าน
-  - GitHub: [AppleBoiy GitHub Profile](https://github.com/AppleBoiy)
+A list of contributors to this project can be found in the [CONTRIBUTORS](CONTRIBUTORS.md) file.
 
-- **KonGKerDvD**
-  - Full Name: กังวานทรัพย์ แซ่ลี้ ก้อง
-  - GitHub: [KonGKerDvD GitHub Profile](https://github.com/KonGKerDvD)
+- **Kungwansup Saelee**
+  - Data Analysis and Data Visualization
 
-- **PutterTh**
-  - Full Name: ปองภพ เชื้อประเสริฐศักดิ์ พัตเตอร์
-  - GitHub: [PutterTh GitHub Profile](https://github.com/PutterTh)
+- **Pongpop Chueprasertsak**
+  - Data Analysis and Data Visualization
+
+- **Chaipat Jainan**
+  - Document writer, Data Analysis and Data Visualization
+
 
 ## License and Disclaimer
 
 ### Dataset License:
 
 The use of the yasirabdaali/corona-virus-covid19-us-counties dataset in this project is subject to its own licensing terms and conditions,
-as detailed in the [DATASET-LICENSE](DATASET-LICENSE).
+as detailed in the [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/).
 These terms are typically defined by the dataset creators or providers.
 Users of this dataset are required
 to refer to the original source or provider for comprehensive information regarding licensing,
