@@ -2,7 +2,7 @@ import folium
 from matplotlib import pyplot as plt
 
 
-def display_heatmap(df, state_name) -> folium.Map | None:
+def display_heatmap(df, state_name):
     total_deaths_sum = df['Total Death'].sum()
 
     # Filter the dataset based on the input state or province name
