@@ -33,7 +33,7 @@ def display_heatmap(df, state_name) -> folium.Map | None:
     return m
 
 
-def histogram_plot(data, column_name, bins=20, path=None):
+def histogram_plot(data, column_name, bins=20, path=None, debug=False):
     fig, ax = plt.subplots(figsize=(8, 6))
 
     ax.hist(data, bins=bins, color='skyblue', edgecolor='black')
@@ -43,10 +43,11 @@ def histogram_plot(data, column_name, bins=20, path=None):
     ax.grid(True, linestyle='--', alpha=0.6)
 
     save_pic(path)
-    plt.show()
+    if not debug:
+        plt.show()
 
 
-def box_plot(data, column_name, path=None):
+def box_plot(data, column_name, path=None, debug=False):
     fig, ax = plt.subplots(figsize=(8, 6))
 
     ax.boxplot(data, vert=False, widths=0.7, patch_artist=True, boxprops=dict(facecolor='skyblue'))
@@ -55,10 +56,11 @@ def box_plot(data, column_name, path=None):
     ax.grid(True, linestyle='--', alpha=0.6)
 
     save_pic(path)
-    plt.show()
+    if not debug:
+        plt.show()
 
 
-def density_plot(data, column_name, path=None):
+def density_plot(data, column_name, path=None, debug=False):
     fig, ax = plt.subplots(figsize=(8, 6))
 
     data.plot(kind='density', color='skyblue', ax=ax)
@@ -68,11 +70,10 @@ def density_plot(data, column_name, path=None):
     ax.grid(True, linestyle='--', alpha=0.6)
 
     save_pic(path)
-    plt.show()
+    if not debug:
+        plt.show()
 
 
 def save_pic(path):
     if path:
         plt.savefig(path)
-
-#%%

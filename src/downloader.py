@@ -3,8 +3,6 @@ import glob
 import subprocess
 import pandas as pd
 
-import prerequisites
-
 from src.logger import Logger
 
 
