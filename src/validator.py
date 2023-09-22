@@ -56,7 +56,7 @@ def validator(file='../data/validated.csv'):
 def clean_data(df):
 
     # log debug if progress is started
-    logging.debug( 'Data is cleaning...')
+    logging.debug('Data is cleaning...')
 
     # Sort the data by total death and total confirmed
     df.sort_values(

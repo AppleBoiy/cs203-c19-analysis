@@ -29,4 +29,3 @@ class Logger:
             return
 
         getattr(self.logger, _type)(message)
-

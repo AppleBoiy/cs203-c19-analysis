@@ -33,4 +33,3 @@ def get_data() -> pd.DataFrame:
 def sample():
     df = pd.read_csv('../data/country_fips.csv')
     print(df.head())
-
