@@ -1,41 +1,73 @@
-# Prerequisite
+# Prerequisites
 
-To use this project, please follow the steps below to ensure you have the necessary prerequisites and dataset set up.
+Before you can effectively utilize this project, it's essential to ensure that you have the necessary prerequisites and dataset prepared. Follow the steps outlined below to set up your environment and data.
 
-## Optional: Download the Dataset
+## Optional: Dataset Download
 
-For more information about the dataset, please download it directly using the provided `download.sh` script. Open your terminal and run the following command:
+For comprehensive information about the dataset, consider downloading it directly using the provided `download.sh` script. Open your terminal and execute the following command:
 
 ```bash
 bash src/download.sh
 ```
 
-This script will download the dataset and make it available for your project.
+This script will facilitate the dataset download, making it readily available for your project.
 
-## 1. Setup Environment
+## Environment Setup
 
-To set up the environment for this project, you need to install all the required packages. You can do this by using the `prerequisites.py` script. Run the following command in your terminal:
-
-```bash
-python3 prerequisites.py || python prerequisites.py
-```
-
-or install by pip
+In order to establish the required environment for this project, you'll need to install all the necessary packages. First, let's determine which version of Python is available:
 
 ```bash
-python3 -m pip install -r requirements.txt || python -m pip install -r requirements.txt
+if command -v python3 &>/dev/null; then
+    PYTHON_CMD="python3"
+    PIP_CMD="python3 -m pip"
+else
+    PYTHON_CMD="python"
+    PIP_CMD="python -m pip"
+fi
+
+# Use $PYTHON_CMD and $PIP_CMD for commands based on available Python version.
 ```
-
-This script will install all the necessary packages and dependencies required for the project.
-
-## 2. Verify and Download Dataset
-
-Before using the dataset, it's essential to verify and ensure that it's properly downloaded and ready for use. Run the following command in your terminal:
+Now, you can use the $PYTHON_CMD and $PIP_CMD variables to run commands based on the available Python version. For example, to install packages:
 
 ```bash
-python3 setup.py || python setup.py
+echo "Using $PYTHON_CMD for Python and $PIP_CMD for pip."
+$PIP_CMD install -r requirements.txt
+````
+## Dataset Verification and Download
+
+Before utilizing the dataset, it's crucial to verify its integrity and ensure it's been correctly downloaded and prepared for use. Execute the following command in your terminal:
+
+```bash
+$PYTHON_CMD setup.py
 ```
 
-This script will perform any necessary verification steps and ensure that the dataset is correctly set up for your project.
+This script will conduct necessary verification steps and ensure the dataset is correctly configured for your project.
 
-Once you have completed these prerequisites, you should be ready to work with the Coronavirus Covid-19 US Counties Dataset and the project.
+## Additional Setup (Troubleshooting)
+
+If you encounter any errors during the setup process, follow these additional steps for troubleshooting:
+
+1. Directly download the Kaggle dataset from the Kaggle website.
+2. Place the downloaded dataset within the `data/` folder located at the root of your project.
+3. Re-run the `setup.py` file.
+
+After completing these additional steps, navigate to the `src/` folder and execute the following command:
+
+```bash
+cd src
+
+$PYTHON_CMD validator.py
+```
+
+This will assist in successfully setting up the dataset.
+
+## Unset Environment Variables
+
+Once you've completed the setup and verification process, you can unset the environment variables to keep your environment clean:
+
+```bash
+unset PYTHON_CMD
+unset PIP_CMD
+```
+
+Once you've completed these prerequisites, along with any necessary troubleshooting, you'll be well-prepared to engage with the Coronavirus Covid-19 US Counties Dataset and embark on your project.
