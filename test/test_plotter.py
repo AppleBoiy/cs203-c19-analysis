@@ -21,17 +21,17 @@ def test_display_heatmap():
 
 def test_histogram_plot():
     path = 'images/histogram_plot.png'
-    histogram_plot(sample_data['Total Death'], 'Total Death', bins=5, path=path, debug=True)
+    histogram_plot(sample_data['Total Death'], 'Total Death', bins=5, path=path)
     assert os.path.exists(path)
 
 
 def test_box_plot():
     path = 'images/box_plot.png'
-    box_plot(sample_data['Total Death'], 'Total Death', path=path, debug=True)
+    box_plot(sample_data['Total Death'], 'Total Death', path=path)
     assert os.path.exists(path)
 
 
 def test_density_plot():
     path = 'images/density_plot.png'
-    density_plot(sample_data['Total Death'], 'Total Death', path=path, debug=True)
+    density_plot(sample_data['Total Death'], 'Total Death', path=path)
     assert os.path.exists(path)

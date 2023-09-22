@@ -33,7 +33,7 @@ def display_heatmap(df, state_name):
     return m
 
 
-def histogram_plot(data, column_name, bins=20, path=None, debug=False):
+def histogram_plot(data, column_name, bins=20, path=None):
     fig, ax = plt.subplots(figsize=(8, 6))
 
     ax.hist(data, bins=bins, color='skyblue', edgecolor='black')
@@ -42,12 +42,11 @@ def histogram_plot(data, column_name, bins=20, path=None, debug=False):
     ax.set_title(f'Distribution of {column_name}')
     ax.grid(True, linestyle='--', alpha=0.6)
 
-    save_pic(path)
-    if not debug:
-        plt.show()
+    if path is not None:
+        plt.savefig(path)
 
 
-def box_plot(data, column_name, path=None, debug=False):
+def box_plot(data, column_name, path=None):
     fig, ax = plt.subplots(figsize=(8, 6))
 
     ax.boxplot(data, vert=False, widths=0.7, patch_artist=True, boxprops=dict(facecolor='skyblue'))
@@ -55,12 +54,11 @@ def box_plot(data, column_name, path=None, debug=False):
     ax.set_title(f'Box Plot of {column_name}')
     ax.grid(True, linestyle='--', alpha=0.6)
 
-    save_pic(path)
-    if not debug:
-        plt.show()
+    if path is not None:
+        plt.savefig(path)
 
 
-def density_plot(data, column_name, path=None, debug=False):
+def density_plot(data, column_name, path=None):
     fig, ax = plt.subplots(figsize=(8, 6))
 
     data.plot(kind='density', color='skyblue', ax=ax)
@@ -69,11 +67,5 @@ def density_plot(data, column_name, path=None, debug=False):
     ax.set_title(f'Density Plot of {column_name}')
     ax.grid(True, linestyle='--', alpha=0.6)
 
-    save_pic(path)
-    if not debug:
-        plt.show()
-
-
-def save_pic(path):
-    if path:
+    if path is not None:
         plt.savefig(path)
