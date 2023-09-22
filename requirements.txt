@@ -4,3 +4,4 @@ folium~=0.14.0
 matplotlib~=3.7.1
 pytest~=7.4.0
 flake8~=6.0.0
+scipy~=1.10.1
