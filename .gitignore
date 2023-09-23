@@ -193,6 +193,7 @@ xcuserdata/
 
 ## cache ##
 *__pycache__
+dist/
 
 test/*.png
 

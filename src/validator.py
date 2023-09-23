@@ -24,12 +24,12 @@ Added:
 """
 
 
-def validator(file='../data/validated.csv'):
+def validator(file=None):
     # log debug if progress is started
     logging.debug('Data is validating...')
 
+    admin2 = 'City/County/Borough/Region'
     df = pd.read_csv(file)
-
     df.dropna(inplace=True)
 
     # drop location column because it is not needed for the model
@@ -38,7 +38,7 @@ def validator(file='../data/validated.csv'):
     # change header name
     df.rename(
         columns={
-            'Admin 2 Level (City/County/Borough/Region)': 'City/County/Borough/Region'
+            'Admin 2 Level (City/County/Borough/Region)': admin2
         },
         inplace=True
     )
@@ -56,8 +56,9 @@ def validator(file='../data/validated.csv'):
     df.sort_values(
         by=[
             'State',
-            'City/County/Borough/Region',
-            'Total Death', 'Total Confirmed'
+            admin2,
+            'Total Death',
+            'Total Confirmed'
         ],
         inplace=True
     )
@@ -65,14 +66,14 @@ def validator(file='../data/validated.csv'):
     df.drop_duplicates(
         subset=[
             'State',
-            'City/County/Borough/Region'
+            admin2,
         ],
         keep='last',
         inplace=True
     )
 
     # Drop the data that City/County/Borough/Region startswith 'out of' case-insensitive
-    df = df[~df['City/County/Borough/Region'].str.contains('out of', case=False)]
+    df = df[~df[admin2].str.contains('out of', case=False)]
 
     # log debug if progress is run successfully
     logging.debug('Data is validated successfully')

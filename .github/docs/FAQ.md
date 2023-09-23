@@ -25,7 +25,7 @@ To affirm the accuracy and cleanliness of our dataset, we perform rigorous valid
 
 As demonstrated in the comparison below, the left side showcases data from [https://www.healthdata.org](https://covid19.healthdata.org/united-states-of-america?view=cumulative-deaths&tab=trend), while the right side represents our meticulously processed data:
 
-![Comparison of Data](../../presentation/resource/confirm_data_is_clean.png)
+![Comparison of Data](../../resource/etc/confirm_data_is_clean.png)
 
 The striking alignment between our dataset and the data from [https://www.healthdata.org](https://covid19.healthdata.org/united-states-of-america?view=cumulative-deaths&tab=trend) serves as compelling evidence of the high level of accuracy and cleanliness we have achieved. We proudly assert that our data has undergone thorough cleaning and validation, instilling confidence in its reliability.
 

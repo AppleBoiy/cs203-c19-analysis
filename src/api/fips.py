@@ -3,7 +3,7 @@ import json
 import pandas as pd
 from urllib import request
 
-root = '../../data/'
+fips_csv = '../../data/country_fips.csv'
 
 
 def create_fips_csv():
@@ -12,13 +12,13 @@ def create_fips_csv():
     data = json.loads(response.read())
 
     df = pd.DataFrame(data[1:], columns=data[0])
-    df.to_csv(root + 'country_fips.csv', index=False)
+    df.to_csv(fips_csv, index=False)
 
     print(df.head())
 
 
 def get_fips(name):
-    df = pd.read_csv(root + 'country_fips.csv')
+    df = pd.read_csv(fips_csv)
     try:
         fips = df[df['NAME'] == name]
         return fips
@@ -29,11 +29,11 @@ def get_fips(name):
 
 def get_data(file=None) -> pd.DataFrame:
     if file is None:
-        file = root + 'country_fips.csv'
+        file = fips_csv
     df = pd.read_csv(file)
     return df
 
 
 def sample():
-    df = pd.read_csv(root + 'country_fips.csv')
+    df = pd.read_csv(fips_csv)
     print(df.head())
