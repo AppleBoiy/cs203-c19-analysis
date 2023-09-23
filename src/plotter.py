@@ -6,7 +6,7 @@ def display_heatmap(df, state_name):
     total_deaths_sum = df['Total Death'].sum()
 
     # Filter the dataset based on the input state or province name
-    state_df = df[df['Province/State'] == state_name]
+    state_df = df[df['State'] == state_name]
 
     if state_df.empty:
         print(f"No data found for {state_name}.")
