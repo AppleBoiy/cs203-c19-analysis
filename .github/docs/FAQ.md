@@ -9,12 +9,6 @@
 
 To maintain the utmost accuracy and cleanliness of our data, we have implemented a meticulous process that encompasses the following key steps:
 
-### Data Collection
-
-The data collection process is conducted on a daily basis, with regular uploads to our website. In an ideal scenario, data should exhibit a consistent upward trajectory over time, with the latest entries being the most reliable. However, we have encountered certain anomalies within our dataset, including non-sequential date ordering and occasional discrepancies in accuracy.
-
-To address these issues, we place significant reliance on the timestamp of the last data update. This timestamp serves as a pivotal reference point for our subsequent data cleaning procedures.
-
 ### Data Cleaning Process
 
 Our data cleaning process places a strong emphasis on two critical aspects:
