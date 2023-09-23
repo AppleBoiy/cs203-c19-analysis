@@ -1,16 +1,16 @@
 import os
-
-import pandas as pd
 import json
 import sys
+
 from urllib import request
+import pandas as pd
 
 
 def google_key():
     sys.path.append('/')
     home = os.path.expanduser("~")
     key_path = os.path.join(home, '.keys', 'google_map_api.key')
-    with open(key_path, 'r') as f:
+    with open(key_path, 'r', encoding='utf-8') as f:
         key = f.read()
     return key
 
@@ -27,17 +27,21 @@ def generate_fips_code(state_code, county_code):
     return fips_code
 
 
-def get_response(lat, lon):
-    url = f"https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lon}&key={google_key()}"
-    response = request.urlopen(url)
-    data = json.loads(response.read())
+def get_response(lat, lon, google_key):
+    url = f"https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lon}&key={google_key}"
 
-    print(data)
+    try:
+        with request.urlopen(url, timeout=10) as response:
+            if response.status == 200:
+                data = json.loads(response.read().decode('utf-8'))
+                return data
+            print(f"HTTP Error {response.status}: {response.reason}")
+    except request.URLError as e:
+        print(f"URLError: {e.reason}")
+    except json.JSONDecodeError as e:
+        print(f"JSON Decode Error: {e}")
 
-    if data['status'] == 'OK':
-        return data['results']
-
-    raise PermissionError(f'{data["status"]}: {data["error_message"]}')
+    return None  # Return None in case of errors
 
 
 def get_admin2_info():
