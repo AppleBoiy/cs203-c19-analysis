@@ -15,7 +15,7 @@ This README file is provided by the project authors for informational purposes o
 
 ## Contributors
 
-A list of contributors to this project can be found in the [CONTRIBUTORS](CONTRIBUTORS.md) file.
+A list of contributors to this project can be found in the [CONTRIBUTORS.md](CONTRIBUTORS.md)
 
 - **Kungwansup Saelee**
   - Data Analysis and Data Visualization
@@ -26,6 +26,9 @@ A list of contributors to this project can be found in the [CONTRIBUTORS](CONTRI
 - **Chaipat Jainan**
   - Document writer, Data Analysis and Data Visualization
 
+## Read FAQ
+
+For answers to frequently asked questions (FAQ), please refer to the [FAQ section](docs/FAQ.md)
 
 ## License and Disclaimer
 
@@ -48,5 +51,5 @@ Please refer to the [LICENSE](../LICENSE) for specific terms and conditions rela
 
 The project authors (Covid-19US-CS203) wish to emphasize that they do not assert ownership of the dataset. They hold no responsibility for any disputes or matters arising from its utilization. Users are strongly encouraged to adhere to the licensing terms of the dataset and provide appropriate attribution to the dataset creators when necessary.
 
-For comprehensive information about the yasirabdaali/corona-virus-covid19-us-counties dataset, please visit the original source or provider via [Kaggle: yasirabdaali/corona-virus-covid19-us-counties](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties).
+> For comprehensive information about the yasirabdaali/corona-virus-covid19-us-counties dataset, please visit the original source or provider via [Kaggle: yasirabdaali/corona-virus-covid19-us-counties](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties).
 
