@@ -8,14 +8,15 @@
 
 คำแนะนำอย่างละเอียดอ่านต่อที่ [prerequisites.md](docs/prerequisites.md) (เป็นภาษาอังกฤษ)
 
-## สามาชิกในทีม
-- นาย ก
-  - รับหน้าที่ .. 
-- นาย ข
-  - รับหน้าที่ ..
-- นาย ค
-  - รับหน้าที่ ..
-  
+## สามาชิก
+**TEAM LEAD**
+  - นาย กังวานทรัพย์ แซ่ลี้ (ก้อง) data vitualize และ หา/ทำความสะอาดชุดข้อมูลเพิ่มเติมที่ใช้ในการเปรียบเทียบ
+
+**MEMBERS**
+  - นาย ปองภพ เชื้อประเสริฐศักดิ์ (พัตเตอร์) data vitualize นำเสนอในรูปกราฟแท่ง
+    
+  - นาย ชัยภัทร ใจน่าน (ไอซ์) QA/Testing, Document writer and Data Analysts
+ 
 ## ประกาศ
 
 การใช้ชุดข้อมูล yasirabdaali/corona-virus-covid19-us-counties ในโปรเจคนี้ขึ้นอยู่กับข้อกำหนดและเงื่อนไขของการอนุญาตของชุดข้อมูลเอง ตามที่ระบุใน [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) 
