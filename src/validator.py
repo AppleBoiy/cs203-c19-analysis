@@ -1,10 +1,30 @@
+#!/usr/bin/env python3
 import logging
 
 import pandas as pd
 
+log = \
+    """
+This action is used to validate and clean the data by remove the missing value and duplicate value.
+Keeps the last duplicate value and remove all the missing value.
+(Not recommended if you want to analyze data by date and location)
+
+Removed:
+- Remove the missing value
+- Remove the duplicate value (Total Death, Total Confirmed)
+- Remove the data that City/County/Borough/Region startswith 'out of' case-insensitive
+
+Change:
+- Change the header name (Admin 2 Level (City/County/Borough/Region) -> City/County/Borough/Region)
+- Change the header name (Province/State -> State)
+- Sort the data by State, Total Death, Total Confirmed
+
+Added:
+- Add Death Rate column
+"""
+
 
 def validator(file='../data/validated.csv'):
-
     # log debug if progress is started
     logging.debug('Data is validating...')
 
@@ -23,12 +43,19 @@ def validator(file='../data/validated.csv'):
         inplace=True
     )
 
+    df.rename(
+        columns={
+            'Province/State': 'State'
+        },
+        inplace=True
+    )
+
     # convert datatype
     df['Date'] = pd.to_datetime(df['Date'])
 
     df.sort_values(
         by=[
-            'Province/State',
+            'State',
             'City/County/Borough/Region',
             'Total Death', 'Total Confirmed'
         ],
@@ -37,7 +64,7 @@ def validator(file='../data/validated.csv'):
 
     df.drop_duplicates(
         subset=[
-            'Province/State',
+            'State',
             'City/County/Borough/Region'
         ],
         keep='last',
@@ -54,14 +81,13 @@ def validator(file='../data/validated.csv'):
 
 
 def clean_data(df):
-
     # log debug if progress is started
     logging.debug('Data is cleaning...')
 
     # Sort the data by total death and total confirmed
     df.sort_values(
         by=[
-            'Province/State',
+            'State',
             'Total Death',
             'Total Confirmed'
         ],
@@ -78,6 +104,7 @@ def clean_data(df):
 
 
 if __name__ == '__main__':
+    print(log)
     data = validator()
     clean_data(data)
     data.to_csv('../data/data.csv', index=False)

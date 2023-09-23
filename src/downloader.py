@@ -42,6 +42,12 @@ class DataDownloader(Logger):
             self.log("info", "Validated data found. Skipping validation.")
 
     def validate(self):
+        """
+        What's change:
+        - Drop the column 'Admin 2 FIPS Code' because it is not needed for the model
+
+        :return: Dataframe that has been validated
+        """
         self.log('info', 'Validating data...')
         df = pd.read_csv(self.raw_data, sep=';')
         df.drop('Admin 2 FIPS Code', axis=1, inplace=True)
@@ -53,6 +59,11 @@ class DataDownloader(Logger):
         return df
 
     def create_validated_csv(self):
+        """
+        What's change:
+        - This will create a new csv file that has been validated and drop the column 'Admin 2 FIPS Code'
+        and also change the seperator from ';' to ','.
+        """
         self.log('info', 'Creating validated CSV...')
         try:
             df = self.validate()
@@ -61,7 +72,7 @@ class DataDownloader(Logger):
             return os.EX_OK, df
         except FileNotFoundError as e:
             self.log('error', f'Error while creating validated CSV: {e}')
-            return os.EX_OK, None
+            return os.EX_NOTFOUND, None
 
     @property
     def validated_csv(self):

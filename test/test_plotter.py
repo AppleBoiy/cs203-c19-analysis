@@ -4,7 +4,7 @@ from src.plotter import display_heatmap, histogram_plot, box_plot, density_plot
 
 
 sample_data = pd.DataFrame({
-    'Province/State': ['Alabama', 'Alabama', 'Alabama'],
+    'State': ['Alabama', 'Alabama', 'Alabama'],
     'City/County/Borough/Region': ['City1', 'City2', 'City3'],
     'Total Death': [10, 20, 30],
     'Total Confirmed': [100, 200, 300],
@@ -20,18 +20,18 @@ def test_display_heatmap():
 
 
 def test_histogram_plot():
-    path = 'images/histogram_plot.png'
+    path = 'test/histogram_plot.png'
     histogram_plot(sample_data['Total Death'], 'Total Death', bins=5, path=path)
     assert os.path.exists(path)
 
 
 def test_box_plot():
-    path = 'images/box_plot.png'
+    path = 'test/box_plot.png'
     box_plot(sample_data['Total Death'], 'Total Death', path=path)
     assert os.path.exists(path)
 
 
 def test_density_plot():
-    path = 'images/density_plot.png'
+    path = 'test/density_plot.png'
     density_plot(sample_data['Total Death'], 'Total Death', path=path)
     assert os.path.exists(path)
