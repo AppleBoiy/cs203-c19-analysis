@@ -1,20 +1,22 @@
-import json
+import requests
 
 import pandas as pd
-from urllib import request
 
 fips_csv = '../../data/country_fips.csv'
 
 
 def create_fips_csv():
     url = "https://api.census.gov/data/2010/dec/sf1?get=NAME&for=county:*"
-    response = request.urlopen(url)
-    data = json.loads(response.read())
+    with requests.get(url, timeout=10) as response:
+        if response.status_code == 200:
+            data = response.json()
 
-    df = pd.DataFrame(data[1:], columns=data[0])
-    df.to_csv(fips_csv, index=False)
+            df = pd.DataFrame(data[1:], columns=data[0])
+            df.to_csv(fips_csv, index=False)
 
-    print(df.head())
+            print(df.head())
+        else:
+            print(f"Error: {response.status_code}")
 
 
 def get_fips(name):
