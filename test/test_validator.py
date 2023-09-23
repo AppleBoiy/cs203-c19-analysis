@@ -7,7 +7,7 @@ from src.validator import clean_data
 def sample_data():
     data = {
         'Date': ['2021-01-01', '2021-01-02', '2021-01-03', '2021-01-04'],
-        'Province/State': ['State A', 'State B', 'State A', 'State B'],
+        'State': ['State A', 'State B', 'State A', 'State B'],
         'City/County/Borough/Region': ['City X', 'City Y', 'City Z', 'City W'],
         'Total Death': [10, 20, 0, 0],
         'Total Confirmed': [10, 200, 30, 0],

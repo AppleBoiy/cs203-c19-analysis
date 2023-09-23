@@ -4,7 +4,7 @@ from src.plotter import display_heatmap, histogram_plot, box_plot, density_plot
 
 
 sample_data = pd.DataFrame({
-    'Province/State': ['Alabama', 'Alabama', 'Alabama'],
+    'State': ['Alabama', 'Alabama', 'Alabama'],
     'City/County/Borough/Region': ['City1', 'City2', 'City3'],
     'Total Death': [10, 20, 30],
     'Total Confirmed': [100, 200, 300],
