@@ -10,7 +10,7 @@ def is_library_installed(library_name):
 
 
 def install_libraries():
-    with open('requirements.txt') as f:
+    with open('requirements.txt', encoding='utf-8') as f:
         required_libraries = f.read().splitlines()
 
         for library in required_libraries:
