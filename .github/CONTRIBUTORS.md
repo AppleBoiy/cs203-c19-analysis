@@ -1,6 +1,6 @@
 # Contributors
 
-The success of this project is attributed to the dedicated efforts of the following individuals, each contributing their expertise and fulfilling distinct roles:
+The success of this project is attributed to the dedicated efforts of the following individuals, each contributing their expertise and fulfilling distinct roles
 
 ## KonGKerDvD
 - **Full Name:** กังวานทรัพย์ แซ่ลี้ ก้อง
