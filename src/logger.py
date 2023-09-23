@@ -5,7 +5,7 @@ class Logger:
     def __init__(self, debug=False, write=False):
         self.debug = debug
         self.is_write = write
-        self.logger = self.setup_logger()
+        self.console = self.setup_logger()
 
     def setup_logger(self):
         logger = logging.getLogger(__name__)
@@ -28,4 +28,4 @@ class Logger:
         if not self.debug:
             return
 
-        getattr(self.logger, _type)(message)
+        getattr(self.console, _type)(message)
