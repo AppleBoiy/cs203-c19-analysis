@@ -1,4 +1,5 @@
 # Coronavirus Covid-19 US Counties Dataset
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
 
 > **สำหรับ `README.md` ฉบับภาษาไทย โปรดดูที่ [README-TH.md](README-TH.md)**
 
@@ -15,7 +16,7 @@ This README file is provided by the project authors for informational purposes o
 
 ## Contributors
 
-A list of contributors to this project can be found in the [CONTRIBUTORS](CONTRIBUTORS.md) file.
+A list of contributors to this project can be found in the [CONTRIBUTORS.md](CONTRIBUTORS.md)
 
 - **Kungwansup Saelee**
   - Data Analysis and Data Visualization
@@ -26,6 +27,9 @@ A list of contributors to this project can be found in the [CONTRIBUTORS](CONTRI
 - **Chaipat Jainan**
   - Document writer, Data Analysis and Data Visualization
 
+## Read FAQ
+
+For answers to frequently asked questions (FAQ), please refer to the [FAQ section](docs/FAQ.md)
 
 ## License and Disclaimer
 
@@ -48,5 +52,5 @@ Please refer to the [LICENSE](../LICENSE) for specific terms and conditions rela
 
 The project authors (Covid-19US-CS203) wish to emphasize that they do not assert ownership of the dataset. They hold no responsibility for any disputes or matters arising from its utilization. Users are strongly encouraged to adhere to the licensing terms of the dataset and provide appropriate attribution to the dataset creators when necessary.
 
-For comprehensive information about the yasirabdaali/corona-virus-covid19-us-counties dataset, please visit the original source or provider via [Kaggle: yasirabdaali/corona-virus-covid19-us-counties](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties).
+> For comprehensive information about the yasirabdaali/corona-virus-covid19-us-counties dataset, please visit the original source or provider via [Kaggle: yasirabdaali/corona-virus-covid19-us-counties](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties).
 

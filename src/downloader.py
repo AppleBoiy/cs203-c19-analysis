@@ -7,9 +7,6 @@ from src.logger import Logger
 
 
 class DataDownloader(Logger):
-    def __init__(self, debug=False, write=False):
-        super().__init__(debug, write)
-
     def download_data(self, script_path="src/download.sh"):
         try:
             output = subprocess.check_output(
@@ -33,7 +30,7 @@ class DataDownloader(Logger):
         if not glob.glob(os.path.join("data", "validated.csv")):
             status, df = self.create_validated_csv()
 
-            if status == os.EX_OK and df is not None:
+            if status == 'pass' and df is not None:
                 prompt = f'Data was read successfully from {self.raw_data}\n---' f'{df.head()}'
                 self.log("info", prompt)
             else:
@@ -42,6 +39,12 @@ class DataDownloader(Logger):
             self.log("info", "Validated data found. Skipping validation.")
 
     def validate(self):
+        """
+        What's change:
+        - Drop the column 'Admin 2 FIPS Code' because it is not needed for the model
+
+        :return: Dataframe that has been validated
+        """
         self.log('info', 'Validating data...')
         df = pd.read_csv(self.raw_data, sep=';')
         df.drop('Admin 2 FIPS Code', axis=1, inplace=True)
@@ -53,15 +56,20 @@ class DataDownloader(Logger):
         return df
 
     def create_validated_csv(self):
+        """
+        What's change:
+        - This will create a new csv file that has been validated
+        and drop the column 'Admin 2 FIPS Code' and also change the seperator from ';' to ','.
+        """
         self.log('info', 'Creating validated CSV...')
         try:
             df = self.validate()
             df.to_csv(self.validated_csv, index=False)
             self.log('info', 'Validated CSV created successfully.')
-            return os.EX_OK, df
+            return 'pass', df
         except FileNotFoundError as e:
             self.log('error', f'Error while creating validated CSV: {e}')
-            return os.EX_OK, None
+            return e, None
 
     @property
     def validated_csv(self):
