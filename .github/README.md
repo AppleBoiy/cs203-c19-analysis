@@ -1,19 +1,35 @@
-# Coronavirus Covid-19 US Counties Dataset
+# CoronaVirus Covid-19 US Counties
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
 
-> สำหรับ `README.md` ฉบับภาษาไทย โปรดดูที่ [README-TH.md](README-TH.md)
-
+> **Note:** This README file is provided by the project authors for informational purposes only and does not grant any additional rights or permissions beyond those specified by the dataset's original licensing terms.
 
 ## Dataset Description
-The Coronavirus Covid-19 US Counties Dataset is a dataset that contains Province/State,
-Country/Region, Date (we assume the time when the data was recorded),
-the number of confirmed cases and death cases of the coronavirus (COVID-19) in the United States of America.
+
+The COVID-19 US Counties Dataset is a comprehensive dataset providing detailed information about the COVID-19 pandemic in the United States. It includes the following key attributes:
+
+- **Admin 2 FIPS Code:** A unique identifier for administrative subdivisions, such as cities, counties, boroughs, or regions.
+
+- **Province/State:** The specific state or province within the United States.
+
+- **Admin 2 Level:** Indicates the administrative level of the location, such as city, county, borough, region, or other divisions.
+
+- **Date:** The date when the data was recorded, providing a chronological perspective.
+
+- **Total Death:** The total number of deaths attributed to COVID-19 for the specified location and date.
+
+- **Total Confirmed:** The total number of confirmed COVID-19 cases for the specified location and date.
+
+- **Location:** A geographic identifier or coordinates specifying the location associated with the data entry.
 
 ## Prerequisites
 
-Before using this project, please ensure you have the necessary prerequisites set up. You can find detailed instructions in the [prerequisites.](docs/prerequisites.md)
+Before utilizing this dataset, ensure you have the necessary prerequisites in place. Detailed instructions for setup can be found in the [prerequisites section](docs/prerequisites.md). These prerequisites are essential to efficiently work with the data and leverage the project effectively.
 
-This README file is provided by the project authors for informational purposes only and does not grant any additional rights or permissions beyond those specified by the dataset's original licensing terms.
+## Thai Language README
+
+For Thai speakers, we provide a dedicated README in the Thai language. Please refer to [README-TH.md](README-TH.md) for the Thai version of this documentation.
+
 
 ## Contributors
 
