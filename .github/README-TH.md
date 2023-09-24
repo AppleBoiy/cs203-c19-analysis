@@ -17,7 +17,7 @@
  
 ## ประกาศ
 
-การใช้ชุดข้อมูล yasirabdaali/corona-virus-covid19-us-counties ในโปรเจคนี้ขึ้นอยู่กับข้อกำหนดและเงื่อนไขของการอนุญาตของชุดข้อมูลเอง ตามที่ระบุใน [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) 
+การใช้ชุดข้อมูล `yasirabdaali/corona-virus-covid19-us-counties` ในโปรเจคนี้ขึ้นอยู่กับข้อกำหนดและเงื่อนไขของการอนุญาตของชุดข้อมูลเอง ตามที่ระบุใน [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) 
 
 การใช้งานโค้ดในโปรเจคนี้เพื่อวัตถุประสงค์การศึกษา สามารถนำไปใช้งาน แก้ไข และแจกจ่ายต่อได้โดยไม่มีข้อจำกัด `แต่กรุณาให้เครดิตแก่ผู้เขียนโค้ดด้วยนะครับ`
 
