@@ -26,11 +26,11 @@ else
 fi
 
 # Use $PYTHON_CMD and $PIP_CMD for commands based on available Python version.
+echo "Using $PYTHON_CMD for Python and $PIP_CMD for pip."
 ```
 Now, you can use the $PYTHON_CMD and $PIP_CMD variables to run commands based on the available Python version. For example, to install packages:
 
 ```bash
-echo "Using $PYTHON_CMD for Python and $PIP_CMD for pip."
 $PIP_CMD install -r requirements.txt
 ````
 ## Dataset Verification and Download
