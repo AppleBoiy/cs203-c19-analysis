@@ -2,9 +2,9 @@ name: 🧪 Unit testing and linting
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "dev", "master" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "dev" ]
 
 permissions:
   contents: read
