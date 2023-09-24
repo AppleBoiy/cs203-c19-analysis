@@ -6,21 +6,8 @@
 
 ## Dataset Description
 
-The COVID-19 US Counties Dataset is a comprehensive dataset providing detailed information about the COVID-19 pandemic in the United States. It includes the following key attributes:
+The COVID-19 US Counties Dataset is a comprehensive dataset that offers in-depth insights into the COVID-19 pandemic's impact in the United States spanning from 2020 to 2022.
 
-- **Admin 2 FIPS Code:** A unique identifier for administrative subdivisions, such as cities, counties, boroughs, or regions.
-
-- **Province/State:** The specific state or province within the United States.
-
-- **Admin 2 Level:** Indicates the administrative level of the location, such as city, county, borough, region, or other divisions.
-
-- **Date:** The date when the data was recorded
-
-- **Total Death:** The total number of deaths attributed to COVID-19 for the specified location and date.
-
-- **Total Confirmed:** The total number of confirmed COVID-19 cases for the specified location and date.
-
-- **Location:** A geographic identifier or coordinates specifying the location associated with the data entry.
 
 ## Prerequisites
 
