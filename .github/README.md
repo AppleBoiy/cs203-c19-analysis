@@ -1,7 +1,8 @@
 # Coronavirus Covid-19 US Counties Dataset
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
 
-> **สำหรับ `README.md` ฉบับภาษาไทย โปรดดูที่ [README-TH.md](README-TH.md)**
+สำหรับ `README.md` ฉบับภาษาไทย โปรดดูที่ [README-TH.md](README-TH.md)
+-
 
 ## Dataset Description
 The Coronavirus Covid-19 US Counties Dataset is a dataset that contains Province/State,
@@ -20,10 +21,6 @@ This README file is provided by the project authors for informational purposes o
 - **Pongpop Chueprasertsak** [`PutterTh`](https://github.com/PutterTh)
 - **Chaipat Jainan** [`AppleBoiy`](https://github.com/AppleBoiy)
 
-## Read FAQ
-
-For answers to frequently asked questions (FAQ), please refer to the [FAQ section](docs/FAQ.md)
-
 ## License and Disclaimer
 
 ### Dataset License:
@@ -39,10 +36,11 @@ usage restrictions, and other pertinent terms and conditions that may apply.
 
 The project authors (Covid-19US-CS203) wish to emphasize that they do not assert ownership of the dataset. They hold no responsibility for any disputes or matters arising from its utilization. Users are strongly encouraged to adhere to the licensing terms of the dataset and provide appropriate attribution to the dataset creators when necessary.
 
-For comprehensive information about the yasirabdaali/corona-virus-covid19-us-counties dataset, please visit the original source or provider via [Kaggle: yasirabdaali/corona-virus-covid19-us-counties](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties).
+- For comprehensive information about the yasirabdaali/corona-virus-covid19-us-counties dataset, please visit the original source or provider via [Kaggle: yasirabdaali/corona-virus-covid19-us-counties](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties).
 
----
+- For answers to frequently asked questions (FAQ), please refer to the [FAQ section](docs/FAQ.md)
 
-Get help: [Post in our discussion board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions)
+- Get help: [Post in our discussion board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions)
 
 &copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
+-
