@@ -16,16 +16,9 @@ This README file is provided by the project authors for informational purposes o
 
 ## Contributors
 
-A list of contributors to this project can be found in the [CONTRIBUTORS.md](CONTRIBUTORS.md)
-
-- **Kungwansup Saelee**
-  - Data Analysis and Data Visualization
-
-- **Pongpop Chueprasertsak**
-  - Data Analysis and Data Visualization
-
-- **Chaipat Jainan**
-  - Document writer, Data Analysis and Data Visualization
+- **Kungwansup Saelee** [`KonGKerDvD`](https://github.com/KonGKerDvD)
+- **Pongpop Chueprasertsak** [`PutterTh`](https://github.com/PutterTh)
+- **Chaipat Jainan** [`AppleBoiy`](https://github.com/AppleBoiy)
 
 ## Read FAQ
 
