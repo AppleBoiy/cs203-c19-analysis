@@ -16,18 +16,26 @@ def sample_data():
     return pd.DataFrame(data)
 
 
+# Define a test for the clean_data function
 def test_clean_data(sample_data):
+    # Call the clean_data function on the sample data
     clean_data(sample_data)
+
+    # Check if the result is a DataFrame and not empty
     assert isinstance(sample_data, pd.DataFrame)
     assert not sample_data.empty
 
+    # Check the presence of specific columns
     assert 'Death Rate' in sample_data.columns
     assert 'Date' in sample_data.columns
     assert 'City/County/Borough/Region' in sample_data.columns
 
-    assert sample_data['Death Rate'][0] == 1  # 10 / 10 = 1
-    assert sample_data['Death Rate'][1] == 0.1  # 20 / 200 = 0.1
-    assert sample_data['Death Rate'][2] == 0  # 0 / 30 = 0
-    assert sample_data['Death Rate'][3] == 0  # 0 / 0 = 0
+    # Check the values in the 'Death Rate' column
+    death_rate = sample_data['Death Rate']
+    assert death_rate[0] == 1
+    assert death_rate[1] == 0.1
+    assert death_rate[2] == 0
+    assert death_rate[3] == 0
 
+    # Check that there are no missing values in the DataFrame
     assert not sample_data.isnull().any().any()
