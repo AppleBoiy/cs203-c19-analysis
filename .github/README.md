@@ -1,5 +1,5 @@
 
-# CoronaVirus Covid-19 US Counties
+# CoronaVirus Covid-19 US Counties[^1]
 
 [//]: # (#### [Explore Dataset]&#40;../notebooks/inspect.ipynb&#41; &bull; [View the docs ]&#40;docs/prerequisites.md&#41; &bull; [Report issues]&#40;https://github.com/AppleBoiy/Covid-19US-CS203/issues&#41;)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
