@@ -23,7 +23,8 @@ The project authors[^1] wish to emphasize that they do not assert ownership of t
 They[^1] hold no responsibility for any disputes or matters arising from its utilization.
 Users are strongly encouraged to adhere to the licensing terms of the dataset
 and provide appropriate attribution to the dataset creators when necessary.
-> For comprehensive information about the `yasirabdaali/corona-virus-covid19-us-counties`[^2][^3] dataset, please visit the original source or provider via [Kaggle: yasirabdaali/corona-virus-covid19-us-counties](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties).
+
+For comprehensive information about the `yasirabdaali/corona-virus-covid19-us-counties`[^2][^3] dataset, please visit the original source or provider via [Kaggle: yasirabdaali/corona-virus-covid19-us-counties](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties).
 ## Additional Resources
 - [FAQ](docs/FAQ.md): Frequently asked questions and answers.
 - [Discussion Board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions): Get help and engage with the project community.
