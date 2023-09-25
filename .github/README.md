@@ -4,8 +4,6 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
 >**NOTICE:** This README file is provided by the project authors[^1] for informational purposes only and does not grant any additional rights or permissions beyond those specified by the dataset's original licensing terms.
 
-&copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
-
 ## Dataset Overview
 The COVID-19 US Counties Dataset is a comprehensive dataset
 that offers in-depth insights into the COVID-19 pandemic's impact in the United States spanning from 2020 to 2022.
@@ -30,9 +28,12 @@ and provide appropriate attribution to the dataset creators when necessary.
 - [FAQ](docs/FAQ.md): Frequently asked questions and answers.
 - [Discussion Board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions): Get help and engage with the project community.
 
+&copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
+
+
 [^1]: [Contributors of this project](#contributors)
 [^2]: Yasir Raza, Expert at Kaggle and the original dataset creator.
 [^3]: Kaggle, the original dataset provider.
 
-<p align="right"><a href="#coronavirus-covid-19-us-counties">⬆ Back to top</a></p>
+[//]: # (<p align="right"><a href="#coronavirus-covid-19-us-counties">⬆ Back to top</a></p>)
 
