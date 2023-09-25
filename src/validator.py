@@ -23,12 +23,14 @@ Added:
 - Add Death Rate column
 """
 
+admin2 = 'City/County/Borough/Region'
+header = ['State', 'Total Death', 'Total Confirmed', 'Death Rate']
+
 
 def validator(file=None):
     # log debug if progress is started
     logging.debug('Data is validating...')
 
-    admin2 = 'City/County/Borough/Region'
     df = pd.read_csv(file)
     df.dropna(inplace=True)
 
@@ -43,31 +45,15 @@ def validator(file=None):
         inplace=True
     )
 
-    df.rename(
-        columns={
-            'Province/State': 'State'
-        },
-        inplace=True
-    )
+    df.rename(columns={'Province/State': 'State'}, inplace=True)
 
     # convert datatype
     df['Date'] = pd.to_datetime(df['Date'])
 
-    df.sort_values(
-        by=[
-            'State',
-            admin2,
-            'Total Death',
-            'Total Confirmed'
-        ],
-        inplace=True
-    )
+    df.sort_values(by=header, inplace=True)
 
     df.drop_duplicates(
-        subset=[
-            'State',
-            admin2,
-        ],
+        subset=['State', admin2],
         keep='last',
         inplace=True
     )
@@ -87,11 +73,7 @@ def clean_data(df):
 
     # Sort the data by total death and total confirmed
     df.sort_values(
-        by=[
-            'State',
-            'Total Death',
-            'Total Confirmed'
-        ],
+        by=header[:3],
         inplace=True
     )
 

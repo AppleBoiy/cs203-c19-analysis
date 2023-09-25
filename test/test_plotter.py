@@ -2,7 +2,6 @@ import os
 import pandas as pd
 from src.plotter import display_heatmap, histogram_plot, box_plot, density_plot
 
-
 sample_data = pd.DataFrame({
     'State': ['Alabama', 'Alabama', 'Alabama'],
     'City/County/Borough/Region': ['City1', 'City2', 'City3'],
@@ -14,24 +13,22 @@ sample_data = pd.DataFrame({
 })
 
 
-def test_display_heatmap():
+def test_plotter():
     result = display_heatmap(sample_data, 'Alabama')
     assert result is not None
 
+    header = 'Total Death'
+    total_death = sample_data[header]
 
-def test_histogram_plot():
     path = 'test/histogram_plot.png'
-    histogram_plot(sample_data['Total Death'], 'Total Death', bins=5, path=path)
+    histogram_plot(total_death, header, bins=5, path=path)
     assert os.path.exists(path)
 
-
-def test_box_plot():
     path = 'test/box_plot.png'
-    box_plot(sample_data['Total Death'], 'Total Death', path=path)
+    box_plot(total_death, header, path=path)
     assert os.path.exists(path)
 
-
-def test_density_plot():
     path = 'test/density_plot.png'
-    density_plot(sample_data['Total Death'], 'Total Death', path=path)
+    density_plot(total_death, header, path=path)
+
     assert os.path.exists(path)

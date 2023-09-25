@@ -31,7 +31,7 @@ class DataDownloader(Logger):
             status, df = self.create_validated_csv()
 
             if status == 'pass' and df is not None:
-                prompt = f'Data was read successfully from {self.raw_data}\n---' f'{df.head()}'
+                prompt = f'Data was read successfully from {self.raw_data}\n---\n{df.head()}'
                 self.log("info", prompt)
             else:
                 self.log("error", "Error while validating data.")
