@@ -22,14 +22,12 @@ The project authors[^2] wish to emphasize that they do not assert ownership of t
 - [FAQ](docs/FAQ.md): Frequently asked questions and answers.
 - [Discussion Board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions): Get help and engage with the project community.
 
----
+&copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
+
 
 [^1]: The dataset contains the covid-19 pandemic data of the years 2020, 2021 and 2022 of the United States.
 [^2]: [Contributors of this project](#contributors)
 
-&copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
-
----
 
 <p align="right"><a href="#coronavirus-covid-19-us-counties">⬆ Back to top</a></p>
 
