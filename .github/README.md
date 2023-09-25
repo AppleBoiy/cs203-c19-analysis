@@ -30,10 +30,6 @@ and provide appropriate attribution to the dataset creators when necessary.
 
 &copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
 
-
-[^1]: [Contributors of this project](#contributors)
-[^2]: Yasir Raza, Expert at Kaggle and the original dataset creator.
-[^3]: Kaggle, the original dataset provider.
-
-[//]: # (<p align="right"><a href="#coronavirus-covid-19-us-counties">⬆ Back to top</a></p>)
-
+[^1]: The contributors who have played a pivotal role in this project's development and success. [See the list of contributors](#contributors)
+[^2]: Yasir Raza, a distinguished expert with a notable presence on Kaggle, served as the original dataset creator.
+[^3]: We owe our gratitude to Kaggle, a renowned platform known for providing the original dataset that underpins the foundation of this project.
