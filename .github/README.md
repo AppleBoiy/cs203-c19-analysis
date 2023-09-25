@@ -32,4 +32,4 @@ and provide appropriate attribution to the dataset creators when necessary.
 
 [^1]: The contributors who have played a pivotal role in this project's development and success. [See the list of contributors](#contributors)
 [^2]: Yasir Raza, a distinguished expert with a notable presence on Kaggle, served as the original dataset creator.
-[^3]: We owe our gratitude to Kaggle, a renowned platform known for providing the original dataset that underpins the foundation of this project.
+[^3]: Kaggle, a renowned platform known for providing the original dataset that underpins the foundation of this project.
