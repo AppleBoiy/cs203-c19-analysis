@@ -14,7 +14,7 @@ with a specific focus on mastering the foundational principles of data science.
 
 ## Dataset Overview
 
-The [COVID-19 US Counties Dataset][Dataset url][^3] is a comprehensive dataset
+The [COVID-19 US Counties Dataset][Dataset url] is a comprehensive dataset
 that offers in-depth insights into the COVID-19 pandemic's impact in the United States spanning from 2020 to 2022.
 
 ## Prerequisites
