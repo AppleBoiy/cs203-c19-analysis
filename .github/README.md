@@ -2,7 +2,7 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
 ## Dataset Overview
-The COVID-19 US Counties Dataset is a comprehensive dataset
+[The COVID-19 US Counties Dataset][Dataset url] is a comprehensive dataset
 that offers in-depth insights into the COVID-19 pandemic's impact in the United States spanning from 2020 to 2022.
 This dataset is provided by [Yasir Raza][Yasir Kaggle][^2] via [Kaggle][Kaggle][^3].
 The dataset is licensed under the [CC0: Public Domain][CC0: Public Domain][^4].
