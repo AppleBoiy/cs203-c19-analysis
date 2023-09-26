@@ -1,12 +1,11 @@
-
 # CoronaVirus Covid-19 US Counties
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
 ## Dataset Overview
 The COVID-19 US Counties Dataset is a comprehensive dataset
 that offers in-depth insights into the COVID-19 pandemic's impact in the United States spanning from 2020 to 2022.
-This dataset is provided by [Yasir Raza](https://www.kaggle.com/yasirabdaali)[^2] via [Kaggle](https://www.kaggle.com/)[^3].
-The dataset is licensed under the [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/)[^4].
+This dataset is provided by [Yasir Raza][Yasir Kaggle][^2] via [Kaggle][Kaggle][^3].
+The dataset is licensed under the [CC0: Public Domain][CC0: Public Domain][^4].
 
 ## Prerequisites
 Before utilizing this dataset, ensure you have the necessary prerequisites in place.
@@ -24,8 +23,8 @@ They[^1] hold no responsibility for any disputes or matters arising from its uti
 Users are strongly encouraged to adhere to the licensing terms of the dataset
 and provide appropriate attribution to the dataset creators[^2] when necessary.
 
-For comprehensive information about the [corona-virus-covid19-us-counties dataset](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties),
-please visit the original source or provider via [Kaggle](https://www.kaggle.com)[^3].
+For comprehensive information about the [Dataset of the Covid-19 pandemic United States(US) Counties][Dataset url],
+please visit the original source or provider via [Kaggle][Dataset url][^3].
 
 ## Additional Resources
 For additional references and resources, please check the [refs.md](docs/refs.md) file.
@@ -35,6 +34,11 @@ For additional references and resources, please check the [refs.md](docs/refs.md
 &copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
 
 [^1]: The contributors who played pivotal roles in the development and success of this project. For a comprehensive list of contributors, kindly refer to the [contributors section](#contributors).
-[^2]: Yasir Raza, an expert on Kaggle, is the original dataset creator.
-[^3]: Kaggle is a data science competition platform and online community of data scientists and machine learning practitioners under Google LLC.
+[^2]: [Yasir Raza](https://www.kaggle.com/yasirabdaali), an expert on Kaggle, is the original dataset creator.
+[^3]: [Kaggle](https://www.kaggle.com) is a data science competition platform and online community of data scientists and machine learning practitioners under [Google LLC](https://en.wikipedia.org/wiki/Google).
 [^4]: The [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license signifies a generous dedication by the authors to the public domain. It allows creators to relinquish all rights to their works, making them freely available for any purpose, including commercial use, without any encumbrances.
+
+[Yasir Kaggle]: https://www.kaggle.com/yasirabdaali
+[Kaggle]: https://www.kaggle.com
+[CC0: Public Domain]: https://creativecommons.org/publicdomain/zero/1.0/
+[Dataset url]: https://www.kaggle.com/yasirabdaali/corona-virus-covid19-us-counties
