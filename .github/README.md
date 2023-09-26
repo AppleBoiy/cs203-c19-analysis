@@ -3,7 +3,10 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
 
 ## Introduction
-This project is a part of CS203[^1] at Chiang Mai University, designed for computer science students, including the project authors[^2]. Its primary objective is to provide a comprehensive learning experience, with a specific focus on mastering the foundational principles of data science.
+This project is a part of CS203[^1] at [Chiang Mai University][CMU url],
+designed for computer science students, including the project [authors](#contributors)[^2].
+Its primary objective is to provide a comprehensive learning experience,
+with a specific focus on mastering the foundational principles of data science.
 
 ## Dataset Overview
 [The COVID-19 US Counties Dataset][Dataset url] is a comprehensive dataset
@@ -51,3 +54,4 @@ For additional references and resources, please check the [refs.md](docs/refs.md
 [CC0: Public Domain]: https://creativecommons.org/publicdomain/zero/1.0/
 [Dataset url]: https://www.kaggle.com/yasirabdaali/corona-virus-covid19-us-counties
 [CSCMU url]: https://www.cs.science.cmu.ac.th/en/
+[CMU url]: https://www.cmu.ac.th/en/
