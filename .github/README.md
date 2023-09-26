@@ -34,7 +34,7 @@ For additional references and resources, please check the [refs.md](docs/refs.md
 
 &copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
 
-[^1]: Acknowledgment of key contributors who have made significant contributions to the development and success of this project. [View the full list of contributors](#contributors).
+[^1]: We extend our sincere gratitude to the dedicated authors and contributors who played pivotal roles in the development and success of this project. For a comprehensive list of contributors, kindly refer to the [contributors section](#contributors).
 [^2]: Yasir Raza, an esteemed expert with a notable presence on Kaggle, is the original dataset creator.
 [^3]: Kaggle, a reputable platform renowned for providing the foundational dataset for this project.
-[^4]: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/): The Public Domain license allows creators to waive all rights to their works, making them freely available for any purpose, including commercial use, without restrictions.
+[^4]: The [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license signifies a generous dedication by the authors to the public domain. It allows creators to relinquish all rights to their works, making them freely available for any purpose, including commercial use, without any encumbrances.
