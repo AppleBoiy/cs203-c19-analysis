@@ -53,8 +53,6 @@ kindly refer to the [contributors section](#contributors).
 [^3]: The dataset used in this project, titled ["Corona Virus Covid-19 US Counties"][Dataset url],
 is open-source and provided by [Yasir Raza][Yasir Kaggle][^4] via [Kaggle][Kaggle].
 It is distributed under the [CC0: Public Domain][CC0: Public Domain][^6] license.
-
-by [Yasir Raza][Yasir Kaggle][^4] via the data platform [Kaggle][Kaggle]. The dataset is distributed under the [CC0: Public Domain][CC0: Public Domain][^6] license.
 [^4]: [Yasir Raza][Yasir Kaggle], an expert on [Kaggle][Kaggle][^5], is the original dataset creator.
 [^5]: [Kaggle][Kaggle] is a data science competition platform and online community of data scientists and machine learning practitioners
 under [Google LLC](https://en.wikipedia.org/wiki/Google).
