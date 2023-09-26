@@ -2,10 +2,7 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
 
-<div style="text-align:center">
-   <img src="../resource/etc/sort_by_total_confirm.png" alt="Alt Text" width="900" height="531">
-</div>
-
+![The ranking of US counties (sorted by total confirmed cases) from 2020 to 2022](../resource/etc/sort_by_total_confirm.png)
 > The graph above shows ranking of US counties (sorted by total confirmed cases) from 2020 to 2022.
 
 ## Introduction
