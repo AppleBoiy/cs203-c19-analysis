@@ -40,9 +40,6 @@ They assume no responsibility for any disputes or issues that may arise from its
 Users are strongly encouraged to adhere to the licensing terms of the dataset and,
 when necessary, provide appropriate attribution to the dataset creators[^4].
 
-This dataset[^3] has been provided by [Yasir Raza][Yasir Kaggle] via the renowned data platform [Kaggle][Kaggle].
-The dataset is distributed under the [CC0: Public Domain][CC0: Public Domain][^6] license.
-
 ### Additional Resources
 
 For additional references and resources, please check the [refs.md](docs/refs.md) file.
@@ -53,8 +50,11 @@ For additional references and resources, please check the [refs.md](docs/refs.md
 [^1]: CS203 is a course offered within the [Department of Computer Science, Faculty of Science at Chiang Mai University][CSCMU url].
 [^2]: The contributors who played pivotal roles in the development and success of this project. For a comprehensive list of contributors,
 kindly refer to the [contributors section](#contributors).
-[^3]: The dataset used in this project, titled ["Corona Virus Covid-19 US Counties"][Dataset url], is an open-source dataset provided 
-by [Yasir Raza][Yasir Kaggle][^4].
+[^3]: The dataset used in this project, titled ["Corona Virus Covid-19 US Counties"][Dataset url],
+is open-source and provided by [Yasir Raza][Yasir Kaggle][^4] via [Kaggle][Kaggle].
+It is distributed under the [CC0: Public Domain][CC0: Public Domain][^6] license.
+
+by [Yasir Raza][Yasir Kaggle][^4] via the data platform [Kaggle][Kaggle]. The dataset is distributed under the [CC0: Public Domain][CC0: Public Domain][^6] license.
 [^4]: [Yasir Raza][Yasir Kaggle], an expert on [Kaggle][Kaggle][^5], is the original dataset creator.
 [^5]: [Kaggle][Kaggle] is a data science competition platform and online community of data scientists and machine learning practitioners
 under [Google LLC](https://en.wikipedia.org/wiki/Google).
