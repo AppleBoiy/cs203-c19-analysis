@@ -6,6 +6,8 @@
    <img src="../resource/etc/sort_by_total_confirm.png" alt="Alt Text" width="900" height="531">
 </div>
 
+> The graph above shows ranking of US counties (sorted by total confirmed cases) from 2020 to 2022.
+
 ## Introduction
 This project is a part of CS203[^1] at [Chiang Mai University][CMU url],
 designed for computer science students, including the project [authors](#contributors)[^2].
