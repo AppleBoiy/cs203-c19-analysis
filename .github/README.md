@@ -22,6 +22,7 @@ For Thai speakers, we provide a dedicated README in the Thai language. Please re
 The project authors[^1] wish to emphasize that they do not assert ownership of the dataset.
 They[^1] hold no responsibility for any disputes or matters arising from its utilization.
 Users are strongly encouraged to adhere to the licensing terms of the dataset
+
 and provide appropriate attribution to the dataset creators[^3] when necessary.
 
 For comprehensive information about the [corona-virus-covid19-us-counties dataset](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties),
