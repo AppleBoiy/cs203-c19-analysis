@@ -14,7 +14,7 @@ with a specific focus on mastering the foundational principles of data science.
 
 ## Dataset Overview
 
-This dataset[^3] contains essential information related to the COVID-19 pandemic in various administrative regions. It includes data points such as the Admin 2 FIPS Code, Province/State, Admin 2 Level (City/County/Borough/Region), Date, Total Death, Total Confirmed cases, and geographical coordinates (location).
+This dataset[^3] contains essential information related to the COVID-19 pandemic in various administrative regions.
 
 ### Data Fields
 
