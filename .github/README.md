@@ -14,14 +14,14 @@ with a specific focus on mastering the foundational principles of data science.
 
 ## Dataset Overview
 
-[The COVID-19 US Counties Dataset][Dataset url] is a comprehensive dataset
+The [COVID-19 US Counties Dataset][Dataset url][^3] is a comprehensive dataset
 that offers in-depth insights into the COVID-19 pandemic's impact in the United States spanning from 2020 to 2022.
-This dataset is provided by [Yasir Raza][Yasir Kaggle][^3] via [Kaggle][Kaggle][^4].
-The dataset is licensed under the [CC0: Public Domain][CC0: Public Domain][^5].
+This dataset[^3] is provided by [Yasir Raza][Yasir Kaggle][^4] via [Kaggle][Kaggle][^5].
+The dataset[^3] is licensed under the [CC0: Public Domain][CC0: Public Domain][^6].
 
 ## Prerequisites
 
-Before utilizing this dataset, ensure you have the necessary prerequisites in place.
+Before utilizing this dataset[]^3, ensure you have the necessary prerequisites in place.
 Detailed instructions for setup can be found in the [prerequisites.md](docs/prerequisites.md).
 These prerequisites are essential to efficiently work with the data and leverage the project effectively.
 
@@ -40,9 +40,9 @@ For Thai speakers, we provide a dedicated README in the Thai language. Please re
 The project authors[^2] wish to emphasize that they do not assert ownership of the dataset.
 They[^2] hold no responsibility for any disputes or matters arising from its utilization.
 Users are strongly encouraged to adhere to the licensing terms of the dataset
-and provide appropriate attribution to the dataset creators[^3] when necessary.
+and provide appropriate attribution to the dataset creators[^4] when necessary.
 
-For comprehensive information about the [The COVID-19 US Counties Dataset][Dataset url],
+For comprehensive information about the [COVID-19 US Counties Dataset][Dataset url],
 please visit the original source or provider via [Kaggle][Dataset url][^5].
 
 ### Additional Resources
@@ -53,10 +53,16 @@ For additional references and resources, please check the [refs.md](docs/refs.md
 - [Discussion Board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions): Get help and engage with the project community.
 
 [^1]: CS203 is a course offered within the [Department of Computer Science, Faculty of Science at Chiang Mai University][CSCMU url].
-[^2]: The contributors who played pivotal roles in the development and success of this project. For a comprehensive list of contributors, kindly refer to the [contributors section](#contributors).
-[^3]: [Yasir Raza](https://www.kaggle.com/yasirabdaali), an expert on [Kaggle][Kaggle], is the original dataset creator.
-[^4]: [Kaggle](https://www.kaggle.com) is a data science competition platform and online community of data scientists and machine learning practitioners under [Google LLC](https://en.wikipedia.org/wiki/Google).
-[^5]: The [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license signifies a generous dedication by the authors to the public domain. It allows creators to relinquish all rights to their works, making them freely available for any purpose, including commercial use, without any encumbrances.
+[^2]: The contributors who played pivotal roles in the development and success of this project. For a comprehensive list of contributors,
+kindly refer to the [contributors section](#contributors).
+[^3]: The dataset used in this project, titled [Corona Virus Covid-19 US Counties][Dataset url], is an open-source dataset provided 
+by [Yasir Raza][Yasir Kaggle][^3] through the renowned data platform [Kaggle][Kaggle][^4].
+[^4]: [Yasir Raza][Yasir Kaggle], an expert on [Kaggle][Kaggle], is the original dataset creator.
+[^5]: [Kaggle][Kaggle] is a data science competition platform and online community of data scientists and machine learning practitioners
+under [Google LLC](https://en.wikipedia.org/wiki/Google).
+[^6]: The [CC0: Public Domain][CC0: Public Domain] license signifies a generous dedication by the authors to the public domain.
+It allows creators to relinquish all rights to their works, making them freely available for any purpose, including commercial use,
+without any encumbrances.
 
 &copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
 
