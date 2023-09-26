@@ -8,7 +8,7 @@
 ## Introduction
 
 This project is a part of CS203[^1] at [Chiang Mai University][CMU url],
-designed for computer science students, including the project [authors](#contributors)[^2].
+designed for computer science students, including the project authors[^2].
 Its primary objective is to provide a comprehensive learning experience,
 with a specific focus on mastering the foundational principles of data science.
 
