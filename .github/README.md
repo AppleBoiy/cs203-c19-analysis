@@ -1,13 +1,13 @@
-# Analyzing COVID-19 in US Counties
+# Exploring COVID-19 Data in US Counties
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
 
 ## Introduction
 
-This project is an integral component of the CS203 course for the academic year 2023 at Chiang Mai University.
-It has been meticulously designed with the primary objective
-of providing students with a practical avenue
-to comprehend and implement the fundamental principles of the data science process.
+This project represents an integral component of the CS203 course for the academic year 2023 at Chiang Mai University.
+It has been meticulously crafted with the primary goal
+of providing students with a practical avenue to gain a deep understanding
+of and implement the fundamental principles of the data science process.
 
 ## Dataset Overview
 [The COVID-19 US Counties Dataset][Dataset url] is a comprehensive dataset
