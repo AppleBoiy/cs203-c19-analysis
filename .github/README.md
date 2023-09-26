@@ -40,7 +40,7 @@ They assume no responsibility for any disputes or issues that may arise from its
 Users are strongly encouraged to adhere to the licensing terms of the dataset and,
 when necessary, provide appropriate attribution to the dataset creators[^4].
 
-This dataset[^3] has been provided by [Yasir Raza][Yasir Kaggle] via the renowned data platform [Kaggle][Kaggle].
+This dataset[^3] has been provided by [Yasir Raza][Yasir Kaggle] via the data platform [Kaggle][Kaggle].
 The dataset is distributed under the [CC0: Public Domain][CC0: Public Domain][^6] license.
 
 ### Additional Resources
