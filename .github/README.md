@@ -35,7 +35,7 @@ For Thai speakers, we provide a dedicated README in the Thai language. Please re
 
 ## Disclaimer
 
-"The authors of this project"[^2] wish to make it clear that they do not claim ownership of the dataset[^3].
+`The authors of this project`[^2] wish to make it clear that they do not claim ownership of the dataset[^3].
 They[^2] assume no responsibility for any disputes or issues that may arise from its usage.
 Users are strongly encouraged to adhere to the licensing terms of the dataset and,
 when necessary, provide appropriate attribution to the dataset creators[^4].
