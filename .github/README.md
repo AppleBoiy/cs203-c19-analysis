@@ -5,7 +5,9 @@
 ## Dataset Overview
 The COVID-19 US Counties Dataset is a comprehensive dataset
 that offers in-depth insights into the COVID-19 pandemic's impact in the United States spanning from 2020 to 2022.
-> This dataset is provided by [Yasir Raza](https://www.kaggle.com/yasirabdaali)[^2] via [Kaggle](https://www.kaggle.com/)[^3]. The dataset is licensed under the [CC0: Public Domain.](https://creativecommons.org/publicdomain/zero/1.0/)[^4]
+
+This dataset is provided by [Yasir Raza](https://www.kaggle.com/yasirabdaali)[^2] via [Kaggle](https://www.kaggle.com/)[^3]. The dataset is licensed under the [CC0: Public Domain.](https://creativecommons.org/publicdomain/zero/1.0/)[^4]
+
 ## Prerequisites
 Before utilizing this dataset, ensure you have the necessary prerequisites in place.
 Detailed instructions for setup can be found in the [prerequisites.md](docs/prerequisites.md).
