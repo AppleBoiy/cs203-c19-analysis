@@ -20,7 +20,7 @@ For Thai speakers, we provide a dedicated README in the Thai language. Please re
 ## Disclaimer
 The project authors[^1] wish to emphasize that they do not assert ownership of the dataset.
 They[^1] hold no responsibility for any disputes or matters arising from its utilization.
-Users are strongly encouraged to adhere to the licensing terms of the dataset
+Users are strongly encouraged to adhere to the licensing terms of the dataset 
 and provide appropriate attribution to the dataset creators[^2] when necessary.
 
 For comprehensive information about the [Dataset of the Covid-19 pandemic United States(US) Counties][Dataset url],
