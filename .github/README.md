@@ -2,8 +2,8 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
 
-![The ranking of US counties (sorted by total confirmed cases) from 2020 to 2022](../resource/etc/sort_by_total_confirm.png)
-> The graph above shows ranking of US counties (sorted by total confirmed cases) from 2020 to 2022.
+[//]: # (![The ranking of US counties &#40;sorted by total confirmed cases&#41; from 2020 to 2022]&#40;../resource/etc/sort_by_total_confirm.png&#41;)
+[//]: # (> The graph above shows the ranking of US counties &#40;sorted by total confirmed cases&#41; from 2020 to 2022.)
 
 ## Introduction
 This project is a part of CS203[^1] at [Chiang Mai University][CMU url],
@@ -36,7 +36,7 @@ They[^2] hold no responsibility for any disputes or matters arising from its uti
 Users are strongly encouraged to adhere to the licensing terms of the dataset 
 and provide appropriate attribution to the dataset creators[^3] when necessary.
 
-For comprehensive information about the [The COVID-19 US Counties Dataset][Dataset url],
+For comprehensive information about the [COVID-19 US Counties Dataset][Dataset url],
 please visit the original source or provider via [Kaggle][Dataset url][^5].
 
 ### Additional Resources
