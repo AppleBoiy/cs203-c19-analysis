@@ -2,7 +2,7 @@
 # CoronaVirus Covid-19 US Counties
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)
-> This README file is provided by the project authors[^1] for informational purposes only and does not grant any additional rights or permissions beyond those specified by `the dataset's original licensing terms`[^2].
+> This README file is provided by the project authors[^1] for informational purposes only and does not grant any additional rights or permissions beyond those specified by `the dataset's original licensing terms.`[^2]
 
 ## Dataset Overview
 The COVID-19 US Counties Dataset is a comprehensive dataset
