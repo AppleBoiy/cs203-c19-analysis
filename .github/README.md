@@ -31,12 +31,13 @@ For additional references and resources, please check the [refs.md](docs/refs.md
 - [FAQ](docs/FAQ.md): Frequently asked questions and answers.
 - [Discussion Board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions): Get help and engage with the project community.
 
-&copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
 
 [^1]: The contributors who played pivotal roles in the development and success of this project. For a comprehensive list of contributors, kindly refer to the [contributors section](#contributors).
 [^2]: [Yasir Raza](https://www.kaggle.com/yasirabdaali), an expert on Kaggle, is the original dataset creator.
 [^3]: [Kaggle](https://www.kaggle.com) is a data science competition platform and online community of data scientists and machine learning practitioners under [Google LLC](https://en.wikipedia.org/wiki/Google).
 [^4]: The [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license signifies a generous dedication by the authors to the public domain. It allows creators to relinquish all rights to their works, making them freely available for any purpose, including commercial use, without any encumbrances.
+
+&copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
 
 [Yasir Kaggle]: https://www.kaggle.com/yasirabdaali
 [Kaggle]: https://www.kaggle.com
