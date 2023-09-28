@@ -14,7 +14,7 @@ def test_setup_logger_write(logger):
     logger.is_write = True
     logger.setup_logger()
     handlers = logger.console.handlers
-    assert type(handlers[0]) == logging.FileHandler
+    assert isinstance(handlers[0], logging.FileHandler)
 
 
 def test_setup_logger_debug(logger):
