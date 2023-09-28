@@ -1,3 +1,5 @@
+import math
+
 import pandas as pd
 import pytest
 from src.validator import clean_data
@@ -33,7 +35,7 @@ def test_clean_data(sample_data):
     # Check the values in the 'Death Rate' column
     death_rate = sample_data['Death Rate']
     assert death_rate[0] == 1
-    assert death_rate[1] == 0.1
+    assert math.isclose(death_rate[1], 0.1, rel_tol=1e-3)
     assert death_rate[2] == 0
     assert death_rate[3] == 0
 
