@@ -27,11 +27,17 @@ admin2 = 'City/County/Borough/Region'
 header = ['State', 'Total Death', 'Total Confirmed', 'Death Rate']
 
 
-def validator(file=None):
+def validator(data=None):
     # log debug if progress is started
     logging.debug('Data is validating...')
 
-    df = pd.read_csv(file)
+    if isinstance(data, str):
+        df = pd.read_csv(data)
+    elif isinstance(data, pd.DataFrame):
+        df = data.copy()
+    else:
+        raise TypeError('file must be a string or a pandas DataFrame')
+
     df.dropna(inplace=True)
 
     # drop location column because it is not needed for the model

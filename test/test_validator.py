@@ -1,43 +1,61 @@
-import math
+import logging
 
 import pandas as pd
 import pytest
-from src.validator import clean_data
+
+from src.validator import validator, clean_data
 
 
 @pytest.fixture
 def sample_data():
-    data = {
-        'Date': ['2021-01-01', '2021-01-02', '2021-01-03', '2021-01-04'],
-        'State': ['State A', 'State B', 'State A', 'State B'],
-        'City/County/Borough/Region': ['City X', 'City Y', 'City Z', 'City W'],
-        'Total Death': [10, 20, 0, 0],
-        'Total Confirmed': [10, 200, 30, 0],
-        'location': ['1.1,2.2', '5.5,6.6', '7.7,8.8', '0, 0']
-    }
-    return pd.DataFrame(data)
+    data = pd.DataFrame({
+        'Date': ['2021-01-01', '2021-01-02', '2021-01-03'],
+        'Admin 2 Level (City/County/Borough/Region)': ['City1', 'City2', 'City3'],
+        'Province/State': ['State1', 'State2', 'State3'],
+        'Total Death': [10, 5, 8],
+        'Total Confirmed': [100, 50, 80],
+        'location': ['(37.7749, -122.4194)', '(29.7604, -95.3698)', '(40.7128, -74.0060)'],
+        'Death Rate': [0.1, 0.1, 0.1],
+    })
+    return data
 
 
-# Define a test for the clean_data function
-def test_clean_data(sample_data):
-    # Call the clean_data function on the sample data
-    clean_data(sample_data)
+def test_validator(sample_data, caplog):
+    caplog.set_level(logging.DEBUG)  # Capture debug logs
 
-    # Check if the result is a DataFrame and not empty
-    assert isinstance(sample_data, pd.DataFrame)
-    assert not sample_data.empty
+    data = validator(sample_data)
 
-    # Check the presence of specific columns
-    assert 'Death Rate' in sample_data.columns
-    assert 'Date' in sample_data.columns
-    assert 'City/County/Borough/Region' in sample_data.columns
+    # Assert debug logs
+    assert 'Data is validating...' in caplog.text
+    assert 'Data is validated successfully' in caplog.text
 
-    # Check the values in the 'Death Rate' column
-    death_rate = sample_data['Death Rate']
-    assert death_rate[0] == 1
-    assert math.isclose(death_rate[1], 0.1, rel_tol=1e-3)
-    assert death_rate[2] == 0
-    assert death_rate[3] == 0
+    # Assert data correctness and changes
+    assert isinstance(data, pd.DataFrame)
+    assert data.columns.tolist() == [
+        'Date', 'City/County/Borough/Region', 'State',
+        'Total Death', 'Total Confirmed', 'Death Rate'
+    ]
+    assert (data['City/County/Borough/Region'] == ['City1', 'City2', 'City3']).all()
+    assert data['State'].tolist() == ['State1', 'State2', 'State3']
+    assert data['Total Death'].tolist() == [10, 5, 8]
+    assert data['Total Confirmed'].tolist() == [100, 50, 80]
 
-    # Check that there are no missing values in the DataFrame
-    assert not sample_data.isnull().any().any()
+
+def test_clean_data(sample_data, caplog):
+    caplog.set_level(logging.DEBUG)  # Capture debug logs
+
+    data = validator(sample_data.copy())
+    clean_data(data)
+
+    # Assert debug logs
+    assert 'Data is cleaning...' in caplog.text
+    assert 'Data is cleaned successfully' in caplog.text
+
+    # Assert data correctness and changes
+    assert isinstance(data, pd.DataFrame)
+    assert data.columns.tolist() == [
+        'Date', 'City/County/Borough/Region', 'State',
+        'Total Death', 'Total Confirmed', 'Death Rate'
+    ]
+    assert data['Death Rate'].tolist() == [0.1, 0.1, 0.1]
+    assert not data.loc[data['Death Rate'].isnull(), 'Death Rate'].tolist()

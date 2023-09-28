@@ -3,6 +3,7 @@ import logging
 
 class Logger:
     def __init__(self, debug=False, write=False):
+        self.logs = {}
         self.debug = debug
         self.is_write = write
         self.console = self.setup_logger()
@@ -28,4 +29,8 @@ class Logger:
         if not self.debug:
             return
 
+        self.logs.update({
+            'level': _type,
+            'message': message
+        })
         getattr(self.console, _type)(message)

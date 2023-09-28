@@ -1,12 +1,18 @@
-import os
 import glob
+import os
 import subprocess
+
 import pandas as pd
 
 from src.logger import Logger
 
 
 class DataDownloader(Logger):
+    def __init__(self, debug=False, write=False):
+        super().__init__(debug, write)
+        self._raw_data = None
+        self._validated_csv = None
+
     def download_data(self, script_path="src/download.sh"):
         try:
             output = subprocess.check_output(
@@ -78,3 +84,11 @@ class DataDownloader(Logger):
     @property
     def raw_data(self):
         return "data/coronavirus-covid-19-pandemic-usa-counties.csv"
+
+    @validated_csv.setter
+    def validated_csv(self, value):
+        self._validated_csv = value
+
+    @raw_data.setter
+    def raw_data(self, value):
+        self._raw_data = value
