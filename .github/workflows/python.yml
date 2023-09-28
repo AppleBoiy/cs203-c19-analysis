@@ -13,9 +13,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./src/api
     strategy:
       matrix:
         python-version: [ "3.8", "3.9", "3.10" ]
@@ -35,7 +32,7 @@ jobs:
 
       - name: setup env
         run: |
-          python ./setup.py < "y"
+          ls
       - name: Test with pytest
         run: |
           pytest
