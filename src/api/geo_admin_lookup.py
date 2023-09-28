@@ -27,8 +27,8 @@ def generate_fips_code(state_code, county_code):
     return fips_code
 
 
-def get_response(lat, lon, google_key):
-    url = f"https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lon}&key={google_key}"
+def get_response(lat, lon):
+    url = f"https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lon}&key={google_key()}"
 
     try:
         with request.urlopen(url, timeout=10) as response:

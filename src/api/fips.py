@@ -1,8 +1,13 @@
+import os
 import requests
-
 import pandas as pd
+import path
 
-fips_csv = '../../data/country_fips.csv'
+
+def fips_csv():
+    file = 'country_fips.csv'
+    data_folder = path.data()
+    return os.path.join(data_folder, file)
 
 
 def create_fips_csv():
@@ -10,9 +15,8 @@ def create_fips_csv():
     with requests.get(url, timeout=10) as response:
         if response.status_code == 200:
             data = response.json()
-
             df = pd.DataFrame(data[1:], columns=data[0])
-            df.to_csv(fips_csv, index=False)
+            df.to_csv(fips_csv(), index=False)
 
             print(df.head())
         else:
@@ -20,7 +24,7 @@ def create_fips_csv():
 
 
 def get_fips(name):
-    df = pd.read_csv(fips_csv)
+    df = pd.read_csv(fips_csv())
     try:
         fips = df[df['NAME'] == name]
         return fips
@@ -31,11 +35,15 @@ def get_fips(name):
 
 def get_data(file=None) -> pd.DataFrame:
     if file is None:
-        file = fips_csv
+        file: str = fips_csv()
     df = pd.read_csv(file)
     return df
 
 
 def sample():
-    df = pd.read_csv(fips_csv)
+    df = pd.read_csv(fips_csv())
     print(df.head())
+
+
+if __name__ == '__main__':
+    create_fips_csv()
