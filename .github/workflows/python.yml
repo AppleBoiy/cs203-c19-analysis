@@ -29,10 +29,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 pytest pylint pytest-mock requests-mock
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-      - name: setup env
-        run: |
-          ls
       - name: Test with pytest
         run: |
           pytest
