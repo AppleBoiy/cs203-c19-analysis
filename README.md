@@ -30,12 +30,13 @@ The data was collected between 2020 and 2022 (and not updated since then).
 ## Prerequisites
 
 Before utilizing this dataset[^3], ensure you have the necessary prerequisites in place.
-Detailed instructions for setup can be found in the [prerequisites.md](docs/prerequisites.md).
+Detailed instructions for setup can be found in the [prerequisites.md](.github/docs/prerequisites.md).
 These prerequisites are essential to efficiently work with the data and leverage the project effectively.
 
 ## Thai Language README
 
-For Thai speakers, we provide a dedicated README in the Thai language. Please refer to [README-TH.md](README-TH.md) for the Thai version of this documentation.
+For Thai speakers, we provide a dedicated README in the Thai language.
+Please refer to [README-TH.md](.github/README-TH.md) for the Thai version of this documentation.
 
 ## Contributors
 
@@ -52,12 +53,12 @@ when necessary, provide appropriate attribution to the dataset creators[^4].
 
 ### Additional Resources
 
-For additional references and resources, please check the [refs.md](docs/refs.md) file.
+For additional references and resources, please check the [refs.md](.github/docs/refs.md) file.
 
-- [FAQ](docs/FAQ.md): Frequently asked questions and answers.
+- [FAQ](.github/docs/FAQ.md): Frequently asked questions and answers.
 - [Discussion Board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions): Get help and engage with the project community.
 
-&copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
+&copy; 2023 AppleBoiy &bull; [Code of Conduct](.github/CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](LICENSE)
 
 
 [^1]: CS203 is a course offered within the [Department of Computer Science, Faculty of Science at Chiang Mai University][CSCMU url].

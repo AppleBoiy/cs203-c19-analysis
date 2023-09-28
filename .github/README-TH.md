@@ -1,5 +1,5 @@
 # ชุดข้อมูล Coronavirus Covid-19 ของประเทศสหรัฐอเมริกา
-> **For `README.md` in English, please see [README.md](README.md)**
+> **For `README.md` in English, please see [README.md](../README.md)**
 
 ข้อมูล [Coronavirus Covid-19](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties) เป็นชุดข้อมูลที่รวบรวมข้อมูลการติดเชื้อโควิด-19 ในประเทศสหรัฐอเมริกา โดยมีข้อมูลดังนี้
 - จำนวนผู้ติดเชื้อยืนยัน
