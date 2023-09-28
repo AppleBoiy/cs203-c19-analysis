@@ -32,7 +32,7 @@ jobs:
 
       - name: setup env
         run: |
-          python src/api/setup.py < "y"
+          python /home/runner/work/cs203-covid19-analysis-2023/cs203-covid19-analysis-2023/src/api/setup.py < "y"
       - name: Test with pytest
         run: |
           pytest
