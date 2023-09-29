@@ -1,6 +1,6 @@
 import pandas as pd
 
-from src.api.fips import fips_csv, get_fips, get_data
+from src.api import fips_csv, get_fips, get_data
 
 
 def test_get_fips_existing(capsys, mocker):
