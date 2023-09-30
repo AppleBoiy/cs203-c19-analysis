@@ -3,7 +3,7 @@ import logging
 
 import pandas as pd
 
-log = \
+LOG = \
     """
 This action is used to validate and clean the data by remove the missing value and duplicate value.
 Keeps the last duplicate value and remove all the missing value.
@@ -93,7 +93,7 @@ def clean_data(df):
 
 
 if __name__ == '__main__':
-    print(log)
+    print(LOG)
     data = validator()
     clean_data(data)
     data.to_csv('../data/data.csv', index=False)
