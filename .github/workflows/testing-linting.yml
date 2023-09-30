@@ -3,11 +3,12 @@ name: '🚀Unit Testing'
 on:
   push:
     branches:
+      - "main"
       - "dev"
-      - "master"
       - "unittest"
   pull_request:
     branches:
+      - "main"
       - "dev"
       - "unittest"
 
