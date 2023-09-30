@@ -39,7 +39,7 @@ jobs:
         python-version: [ "3.8", "3.9", "3.10" ]
         os: [ "ubuntu-latest", "macos-latest", "windows-latest" ]
     runs-on: ${{ matrix.os }}
-    needs: [ linting-ubuntu, linting-macos, linting-windows ]
+    needs: linting
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
