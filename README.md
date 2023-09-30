@@ -62,8 +62,8 @@ For additional references and resources, please check the [refs.md](.github/docs
 
 
 [^1]: CS203 is a course offered within the [Department of Computer Science, Faculty of Science at Chiang Mai University][CSCMU url].
-[^2]: The contributors who played pivotal roles in the development and success of this project. For a comprehensive list of contributors,
-kindly refer to the [contributors section](#contributors).
+ha
+[^2]: The individuals who made significant contributions pivotal to the development and success of this project are acknowledged as authors. For a comprehensive and detailed list of all contributors, please refer to the dedicated [Contributors](#contributors) section.
 [^3]: The dataset used in this project, titled ["Corona Virus Covid-19 US Counties"][Dataset url],
 is open-source and provided by [Yasir Raza][Yasir Kaggle][^4] via [Kaggle][Kaggle].
 It is distributed under the [CC0: Public Domain][CC0: Public Domain][^6] license.
