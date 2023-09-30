@@ -1,6 +1,9 @@
 # Exploring COVID-19 Data in US Counties
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![codecov](https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023/branch/master/graph/badge.svg)](https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023)
+[![Quality Gate Status][Quality Gate badge]][Quality Gate url]
+[![Code Smells][Code Smells badge]][Code Smells url]
+[![codecov][codecov badge]][codecov url]
+[![Testing and Linting][Testing and Linting badge]][Testing and Linting url]
 
 [//]: # (![The ranking of US counties &#40;sorted by total confirmed cases&#41; from 2020 to 2022]&#40;../resource/etc/sort_by_total_confirm.png&#41;)
 
@@ -64,6 +67,8 @@ For additional references and resources, please check the [refs.md](../docs/refs
 
 &copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
 
+<!-- footnotes -->
+
 [^1]: CS203 is a course offered within
 the [Department of Computer Science, Faculty of Science at Chiang Mai University][CSCMU url].
 [^2]: The individuals who made significant contributions pivotal to the development and success of this project are
@@ -82,6 +87,8 @@ It allows creators to relinquish all rights to their works, making them freely a
 commercial use,
 without any encumbrances.
 
+<!-- external links -->
+
 [CMU url]: https://www.cmu.ac.th/en/
 
 [CSCMU url]: http://cs.science.cmu.ac.th/en/
@@ -93,3 +100,21 @@ without any encumbrances.
 [Kaggle]: https://www.kaggle.com/
 
 [CC0: Public Domain]: https://creativecommons.org/publicdomain/zero/1.0/
+
+<!-- badges -->
+
+[Quality Gate badge]: https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status
+
+[Quality Gate url]: https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203
+
+[Code Smells badge]: https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells
+
+[Code Smells url]: https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203
+
+[codecov badge]: https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023/branch/master/graph/badge.svg
+
+[codecov url]: https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023
+
+[Testing and Linting badge]: https://github.com/AppleBoiy/cs203-covid19-analysis-2023/actions/workflows/testing-linting.yml/badge.svg
+
+[Testing and Linting url]: https://github.com/AppleBoiy/cs203-covid19-analysis-2023/actions/workflows/testing-linting.yml
