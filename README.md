@@ -14,7 +14,7 @@ with a specific focus on mastering the foundational principles of data science.
 
 ## Dataset Overview
 
-This dataset[^3] contains essential information related to the COVID-19 pandemic in various administrative regions.
+[Corona Virus Covid-19 US Counties dataset][Dataset url][^3] contains essential information related to the COVID-19 pandemic in various administrative regions.
 The data was collected between 2020 and 2022 (and not updated since then).
 
 ### Data Fields
