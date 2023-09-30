@@ -118,7 +118,8 @@ jobs:
   code-coverage:
     runs-on: ubuntu-latest
     needs:
-      - unittest-linux-macos
+      - unittest-linux
+      - unittest-macos
       - unittest-windows
     steps:
       - name: Checkout Code
