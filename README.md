@@ -1,6 +1,6 @@
 # Exploring COVID-19 Data in US Counties
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203)[![codecov](https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023/graph/badge.svg?token=EktrBwtceZ)](https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203) [![codecov](https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023/branch/master/graph/badge.svg)](https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023)
 
 [//]: # (![The ranking of US counties &#40;sorted by total confirmed cases&#41; from 2020 to 2022]&#40;../resource/etc/sort_by_total_confirm.png&#41;)
 
