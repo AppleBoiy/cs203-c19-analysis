@@ -111,7 +111,7 @@ without any encumbrances.
 
 [Code Smells url]: https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203
 
-[codecov badge]: https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023/branch/master/graph/badge.svg
+[codecov badge]: https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023/branch/main/graph/badge.svg
 
 [codecov url]: https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023
 
