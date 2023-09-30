@@ -1,13 +1,13 @@
 import os
 import requests
 import pandas as pd
-import path
+
+from directories import Path
 
 
 def fips_csv():
     file = 'country_fips.csv'
-    data_folder = path.data()
-    return os.path.join(data_folder, file)
+    return os.path.join(Path.DATA.value, file)
 
 
 def create_fips_csv():
@@ -24,8 +24,8 @@ def create_fips_csv():
 
 
 def get_fips(name):
-    df = pd.read_csv(fips_csv())
     try:
+        df = pd.read_csv(fips_csv())
         fips = df[df['NAME'] == name]
         return fips
     except IndexError:
@@ -38,11 +38,6 @@ def get_data(file=None) -> pd.DataFrame:
         file: str = fips_csv()
     df = pd.read_csv(file)
     return df
-
-
-def sample():
-    df = pd.read_csv(fips_csv())
-    print(df.head())
 
 
 if __name__ == '__main__':

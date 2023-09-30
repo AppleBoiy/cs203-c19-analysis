@@ -3,6 +3,8 @@ import logging
 
 import pandas as pd
 
+from directories import Path
+
 LOG = \
     """
 This action is used to validate and clean the data by remove the missing value and duplicate value.
@@ -96,4 +98,4 @@ if __name__ == '__main__':
     print(LOG)
     data = validator()
     clean_data(data)
-    data.to_csv('../data/data.csv', index=False)
+    data.to_csv(f'{Path.DATA.value}/data.csv', index=False)

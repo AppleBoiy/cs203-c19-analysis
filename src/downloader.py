@@ -4,6 +4,7 @@ import subprocess
 
 import pandas as pd
 
+from directories import Path
 from src.logger import Logger
 
 
@@ -79,11 +80,11 @@ class DataDownloader(Logger):
 
     @property
     def validated_csv(self):
-        return "data/validated.csv"
+        return Path.DATA.value + "/validated.csv"
 
     @property
     def raw_data(self):
-        return "data/coronavirus-covid-19-pandemic-usa-counties.csv"
+        return Path.DATA.value + "/coronavirus-covid-19-pandemic-usa-counties.csv"
 
     @validated_csv.setter
     def validated_csv(self, value):

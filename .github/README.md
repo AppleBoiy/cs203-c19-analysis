@@ -8,8 +8,7 @@
 
 ## Introduction
 
-This project is a part of CS203[^1] at [Chiang Mai University][CMU url],
-designed for computer science students, including the project authors[^2].
+This project is a part of CS203[^1], designed for computer science students, including the project authors[^2].
 Its primary objective is to provide a comprehensive learning experience,
 with a specific focus on mastering the foundational principles of data science.
 
@@ -33,7 +32,7 @@ The data was collected between 2020 and 2022 (and not updated since then).
 ## Prerequisites
 
 Before utilizing this dataset[^3], ensure you have the necessary prerequisites in place.
-Detailed instructions for setup can be found in the [prerequisites.md](docs/prerequisites.md).
+Detailed instructions for setup can be found in the [prerequisites.md](../docs/prerequisites.md).
 These prerequisites are essential to efficiently work with the data and leverage the project effectively.
 
 ## Thai Language README
@@ -57,9 +56,9 @@ when necessary, provide appropriate attribution to the dataset creators[^4].
 
 ### Additional Resources
 
-For additional references and resources, please check the [refs.md](docs/refs.md) file.
+For additional references and resources, please check the [refs.md](../docs/refs.md) file.
 
-- [FAQ](docs/FAQ.md): Frequently asked questions and answers.
+- [FAQ](../docs/FAQ.md): Frequently asked questions and answers.
 - [Discussion Board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions): Get help and engage with the project
   community.
 
