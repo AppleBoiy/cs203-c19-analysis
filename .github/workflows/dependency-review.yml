@@ -1,5 +1,9 @@
-name: '🔭 Dependency Review'
-on: [pull_request]
+name: Dependency Review
+
+on:
+  pull_request:
+    branches:
+      - '*'
 
 permissions:
   contents: read
@@ -10,5 +14,10 @@ jobs:
     steps:
       - name: 'Checkout Repository'
         uses: actions/checkout@v3
+
       - name: 'Dependency Review'
         uses: actions/dependency-review-action@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          retry-on-snapshot-warnings: false
+          retry-on-snapshot-warnings-timeout: 120
