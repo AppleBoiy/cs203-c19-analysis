@@ -1,4 +1,4 @@
-name: '🔭 Testing and Linting'
+name: '🔭Testing and Linting'
 
 on:
   push:
