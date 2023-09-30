@@ -1,9 +1,9 @@
 # Exploring COVID-19 Data in US Counties
 
+[![Testing and Linting][Testing and Linting badge]][Testing and Linting url]
 [![Quality Gate Status][Quality Gate badge]][Quality Gate url]
 [![Code Smells][Code Smells badge]][Code Smells url]
 [![codecov][codecov badge]][codecov url]
-[![Testing and Linting][Testing and Linting badge]][Testing and Linting url]
 
 [//]: # (![The ranking of US counties &#40;sorted by total confirmed cases&#41; from 2020 to 2022]&#40;../resource/etc/sort_by_total_confirm.png&#41;)
 
