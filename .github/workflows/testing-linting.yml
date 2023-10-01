@@ -2,15 +2,7 @@ name: '🚀Unit Testing'
 
 on:
   push:
-    branches:
-      - "main"
-      - "dev"
-      - "unittest"
   pull_request:
-    branches:
-      - "main"
-      - "dev"
-      - "unittest"
 
 permissions:
   contents: read
