@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from src.api import create_fips_csv
 
-log = \
+LOG = \
     """
 What's the purpose of this file?:
 
@@ -21,7 +21,7 @@ def main():
 
 
 if __name__ == "__main__":
-    print(log, end="")
+    print(LOG, end="")
     res = input()
     if res.lower() == 'y':
         main()
