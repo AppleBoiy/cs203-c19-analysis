@@ -45,7 +45,7 @@ Before utilizing the dataset, it's crucial to verify its integrity and ensure it
 prepared for use. Execute the following command in your terminal:
 
 ```bash
-$PYTHON_CMD processor.py
+$PYTHON_CMD prerequisites.py
 ```
 
 This script will conduct the necessary verification steps and ensure the dataset is correctly configured for your
@@ -57,18 +57,20 @@ If you encounter any errors during the setup process, follow these additional st
 
 1. Directly download the Kaggle dataset from the Kaggle website.
 2. Place the downloaded dataset within the `data/` folder located at the root of your project.
-3. Re-run the `processor.py` file.
+3. Re-run the `prerequistes.py` file.
 
-After completing these additional steps, navigate to the `src/` folder and execute the following command:
-
-```bash
-cd src
-
-$PYTHON_CMD validator.py
-```
 
 This will assist in successfully setting up the dataset.
 
+## Optional: FIPS Dataset Integration
+
+If you wish to incorporate the FIPS dataset into your analysis, it is necessary to execute the `api/setup.py` script in order to download and prepare the dataset. To initiate this process, please utilize the following command:
+
+```bash
+$PYTHON_CMD src/api/setup.py
+```
+
+By running this command, you will ensure that the FIPS dataset is properly acquired and configured, enhancing the comprehensiveness of your analysis.
 ## Unset Environment Variables
 
 Once you've completed the setup and verification process, you can unset the environment variables to keep your

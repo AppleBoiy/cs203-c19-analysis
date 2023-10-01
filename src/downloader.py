@@ -28,10 +28,10 @@ class DataDownloader(Logger):
 
     def start(self):
 
-        if not glob.glob(os.path.join("data", "*.csv")):
+        if not glob.glob(os.path.join("data", "coronavirus-covid-19-pandemic-usa-counties.csv")):
             self.log("info", "Data not found. Downloading data...")
+            self.download_data()
 
-        self.download_data()
         self.log("info", f"Validating {self.raw_data}...")
 
         if not glob.glob(os.path.join("data", "validated.csv")):

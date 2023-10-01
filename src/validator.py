@@ -3,7 +3,6 @@ import logging
 
 import pandas as pd
 
-from directories import Path
 
 LOG = \
     """
@@ -31,7 +30,8 @@ header = ['State', 'Total Death', 'Total Confirmed', 'Death Rate']
 
 def validator(data=None):
     # log debug if progress is started
-    logging.debug('Data is validating...')
+    logging.info(LOG)
+    logging.info('Data is validating... ')
 
     if isinstance(data, str):
         df = pd.read_csv(data)
@@ -58,7 +58,7 @@ def validator(data=None):
     # convert datatype
     df['Date'] = pd.to_datetime(df['Date'])
 
-    df.sort_values(by=header, inplace=True)
+    df.sort_values(by=header[:-1], inplace=True)
 
     df.drop_duplicates(
         subset=['State', admin2],
@@ -70,7 +70,7 @@ def validator(data=None):
     df = df[~df[admin2].str.contains('out of', case=False)]
 
     # log debug if progress is run successfully
-    logging.debug('Data is validated successfully')
+    logging.info('Data is validated successfully')
 
     return df
 
@@ -92,10 +92,3 @@ def clean_data(df):
 
     # log debug if progress is run successfully
     logging.debug('Data is cleaned successfully')
-
-
-if __name__ == '__main__':
-    print(LOG)
-    data = validator()
-    clean_data(data)
-    data.to_csv(f'{Path.DATA.value}/data.csv', index=False)
