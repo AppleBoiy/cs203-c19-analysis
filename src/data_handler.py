@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 import logging
+import os
 
 import pandas as pd
 
+from src.api.google import get_url
 
 LOG = \
     """
@@ -26,6 +28,12 @@ Added:
 
 admin2 = 'City/County/Borough/Region'
 header = ['State', 'Total Death', 'Total Confirmed', 'Death Rate']
+
+
+def get_data(path=None, sep=',') -> pd.DataFrame:
+    if not os.path.exists(path):
+        path = get_url(path)
+    return pd.read_csv(path, sep=sep)
 
 
 def validator(data=None):

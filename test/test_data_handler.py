@@ -3,7 +3,7 @@ import logging
 import pandas as pd
 import pytest
 
-from src.validator import validator, clean_data
+from src.data_handler import validator, clean_data
 
 
 @pytest.fixture
@@ -41,7 +41,7 @@ def test_validator(sample_data, caplog):
     assert data['Total Confirmed'].tolist() == [100, 50, 80]
 
 
-def test_clean_data(sample_data, caplog):
+def test_clean_data1(sample_data, caplog):
     caplog.set_level(logging.DEBUG)  # Capture debug logs
 
     data = validator(sample_data.copy())

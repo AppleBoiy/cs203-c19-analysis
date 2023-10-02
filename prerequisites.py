@@ -1,6 +1,6 @@
 from directories import Path
 from src.downloader import DataDownloader
-from src.validator import validator, clean_data
+from src.data_handler import validator, clean_data
 
 if __name__ == "__main__":
     data_downloader = DataDownloader(debug=True)
