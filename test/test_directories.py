@@ -6,7 +6,7 @@ from directories import Path, Url
 
 dir_path = inspect.getfile(Path)
 if platform.system() == 'Windows':
-    file_name = r'\\directories.py'
+    file_name = r'\directories.py'
 else:
     file_name = '/directories.py'
 __root__ = dir_path.replace(file_name, '')
