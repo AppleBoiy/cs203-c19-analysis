@@ -71,6 +71,19 @@ $PYTHON_CMD src/api/setup.py
 ```
 
 By running this command, you will ensure that the FIPS dataset is properly acquired and configured, enhancing the comprehensiveness of your analysis.
+
+## Optional: Create Python Environment
+
+If you need to set up a Python environment for this project,
+we have provided detailed instructions in a separate document.
+Please refer to the [`pythonenv.md`](pythonenv.md) file for step-by-step instructions
+on creating a Python environment with the necessary dependencies.
+
+Creating a dedicated Python environment is highly recommended to ensure a consistent and isolated development environment for your project. This helps in managing project-specific dependencies and avoiding conflicts with other Python projects.
+
+To get started, simply follow the instructions in the [pythonenv.md](pythonenv.md) document, and you'll be up and running in no time.
+
+
 ## Unset Environment Variables
 
 Once you've completed the setup and verification process, you can unset the environment variables to keep your
