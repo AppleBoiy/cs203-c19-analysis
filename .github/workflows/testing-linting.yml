@@ -5,7 +5,6 @@ on:
     branches:
       - main
 
-
 permissions:
   contents: read
 
@@ -24,8 +23,8 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 pylint
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install flake8 pylint
 
       - name: Perform Code Linting with flake8
         run: |
@@ -53,8 +52,8 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest pytest-mock requests-mock pytest-cov
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install pytest-mock requests-mock pytest-cov
 
       - name: Run Unit Tests with pytest
         run: |
@@ -78,8 +77,8 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest pytest-mock requests-mock pytest-cov
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install pytest pytest-mock requests-mock pytest-cov
 
       - name: Run Unit Tests with pytest
         run: |
@@ -103,8 +102,8 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest pytest-mock requests-mock pytest-cov
           if (Test-Path -Path .\requirements.txt) { pip install -r .\requirements.txt }
+          pip install pytest-mock requests-mock pytest-cov
 
       - name: Run Unit Tests with pytest
         run: |
@@ -128,8 +127,8 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest pytest-mock requests-mock pytest-cov
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install pytest-mock requests-mock pytest-cov
 
       - name: Run code coverage with pytest-cov
         run: |
