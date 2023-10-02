@@ -5,7 +5,7 @@ import subprocess
 import pandas as pd
 
 from directories import Path
-from logger import Logger
+from src.logger import Logger
 
 
 class DataDownloader(Logger):
