@@ -19,8 +19,7 @@ def get_url(raw_url):
 def download(file_id, path):
     # TODO: set credentials_file to the path of your credentials file
     credentials_file = 'path_to_your_credentials.json'
-    file_id = 'your_file_id_here'
-    destination_path = 'path_to_save_downloaded_file.css'
+    destination_path = path + '/path_to_save_downloaded_file.csv'
 
     credentials = service_account.Credentials.from_service_account_file(
         credentials_file, scopes=['https://www.googleapis.com/auth/drive.readonly']
