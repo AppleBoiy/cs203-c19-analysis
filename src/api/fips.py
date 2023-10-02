@@ -1,11 +1,11 @@
 import os
 
+from urllib.error import URLError
 import requests
 import pandas as pd
 
-from urllib.error import URLError
 from directories import Path
-from src import get_url
+from src.api.gdrive import get_url
 
 
 def fips_csv():
@@ -46,8 +46,8 @@ def get_data(path=None) -> pd.DataFrame:
 
         # Check if the 'file' is a URL or a local file path
         if path.startswith('http') or path.startswith('https'):
-            response = requests.get(path)
-            response.raise_for_status()  
+            response = requests.get(path, timeout=10)
+            response.raise_for_status()
             df = pd.read_csv(response.text)
         else:
             df = pd.read_csv(path)
@@ -59,6 +59,7 @@ def get_data(path=None) -> pd.DataFrame:
 
     except FileNotFoundError as e:
         print(f"File Not Found Error: {e}")
+        raise e
 
 
 if __name__ == '__main__':

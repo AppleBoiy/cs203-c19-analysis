@@ -4,7 +4,7 @@ import os
 
 import pandas as pd
 
-from src.api.google import get_url
+from src.api.gdrive import get_url
 
 LOG = \
     """
@@ -40,7 +40,7 @@ def get_data(path=None, sep=',') -> pd.DataFrame:
     except Exception as e:
         print(f"An error occurred: {e}")
         raise e
-    
+
 
 def validator(data=None):
     # log debug if progress is started
