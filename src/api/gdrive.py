@@ -1,5 +1,5 @@
 import requests
-import os
+
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
@@ -17,21 +17,20 @@ def get_url(raw_url):
 
 
 def download(file_id, path):
-    # TODO: set credentials_file to the path of your credentials file
+    # TODO set credentials_file to the path of your credentials file (pylint: disable=w0511)
     credentials_file = 'path_to_your_credentials.json'
-    destination_path = path + '/path_to_save_downloaded_file.csv'
 
     credentials = service_account.Credentials.from_service_account_file(
         credentials_file, scopes=['https://www.googleapis.com/auth/drive.readonly']
     )
     drive_service = build('drive', 'v3', credentials=credentials)
-    request = drive_service.files().get_media(fileId=file_id)
+    request = drive_service.files().get_media(fileId=file_id)  # pylint: disable=E1101
 
-    with open(destination_path, 'wb') as file:
+    with open(path, 'wb') as file:
         downloader = MediaIoBaseDownload(file, request)
         done = False
         while not done:
             status, done = downloader.next_chunk()
             print(f"Download {int(status.progress() * 100)}%")
 
-    print(f"Downloaded '{destination_path}' from Google Drive.")
+    print(f"Downloaded '{path.split('/')[-1]}' from Google Drive.")
