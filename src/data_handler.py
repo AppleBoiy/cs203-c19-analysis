@@ -31,10 +31,16 @@ header = ['State', 'Total Death', 'Total Confirmed', 'Death Rate']
 
 
 def get_data(path=None, sep=',') -> pd.DataFrame:
-    if not os.path.exists(path):
-        path = get_url(path)
-    return pd.read_csv(path, sep=sep)
+    try:
+        if not os.path.exists(path):
+            path = get_url(path)
 
+        df = pd.read_csv(path, sep=sep)
+        return df
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        raise e
+    
 
 def validator(data=None):
     # log debug if progress is started

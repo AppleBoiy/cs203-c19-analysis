@@ -1,8 +1,11 @@
 import os
+
 import requests
 import pandas as pd
 
+from urllib.error import URLError
 from directories import Path
+from src import get_url
 
 
 def fips_csv():
@@ -36,11 +39,26 @@ def get_fips(name):
         return None
 
 
-def get_data(file=None) -> pd.DataFrame:
-    if file is None:
-        file: str = fips_csv()
-    df = pd.read_csv(file)
-    return df
+def get_data(path=None) -> pd.DataFrame:
+    try:
+        if path is None:
+            path = fips_csv()
+
+        # Check if the 'file' is a URL or a local file path
+        if path.startswith('http') or path.startswith('https'):
+            response = requests.get(path)
+            response.raise_for_status()  
+            df = pd.read_csv(response.text)
+        else:
+            df = pd.read_csv(path)
+
+        return df
+    except URLError:
+        url = get_url(path)
+        return get_data(url)
+
+    except FileNotFoundError as e:
+        print(f"File Not Found Error: {e}")
 
 
 if __name__ == '__main__':
