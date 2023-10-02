@@ -2,12 +2,17 @@
 
 This document outlines the steps to create a Python environment from an existing configuration file (`environment.yml` or `requirements.txt`). These steps will help you set up the necessary dependencies for your Python project.
 
-## Table of Contents
+# Table of Contents
 - [Python Virtual Environment Setup with conda env](#python-virtual-environment-setup-with-conda-env)
+  - [Create a New Virtual Environment from environment.yml](#create-a-new-virtual-environment-from-environmentyml)
+  - [Create a New Virtual Environment from requirements.txt](#create-a-new-virtual-environment-from-requirementstxt)
 - [Prerequisites for Python Virtual Environment Setup with pyenv](#python-virtual-environment-setup-with-pyenv)
+  - [Install pyenv](#install-pyenv)
+  - [Create a Virtual Environment](#create-a-virtual-environment)
 
 
-### Python Virtual Environment Setup with `conda env`
+## Python Virtual Environment Setup with `conda env`
+### Create a New Virtual Environment from environment.yml
 
 1. **Activate Conda (if not already activated):**
    If you haven't activated Conda, open a terminal or command prompt and activate it by running:
@@ -71,15 +76,15 @@ This document outlines the steps to create a Python environment from an existing
    This will install the Python packages listed in the `requirements.txt` file.
 
 
-### Python Virtual Environment Setup with `pyenv`
+## Python Virtual Environment Setup with `pyenv`
 
-#### Install `pyenv`
+### Install `pyenv`
 
 1. **Install `pyenv` (if not already installed):**
 
    If you haven't installed `pyenv` on your system, you can follow the official installation instructions for your operating system: [pyenv Installation](https://github.com/pyenv/pyenv#installation).
 
-### Create a Virtual Environment
+## Create a Virtual Environment
 
 2. **Install the Desired Python Version:**
 
@@ -97,11 +102,6 @@ This document outlines the steps to create a Python environment from an existing
    pyenv virtualenv <python_version> <env_name>
    ```
 
-   For example:
-
-   ```bash
-   pyenv virtualenv 3.8.12 myenv
-   ```
 
    This command creates a virtual environment named `myenv` using the specified Python version.
 
