@@ -1,26 +1,12 @@
 import logging
 
+from unittest import mock
 import pandas as pd
 import pytest
 
-from unittest import mock
 from directories import Url
 from src.api.gdrive import get_url
 from src.data_handler import validator, clean_data, get_data
-
-
-@pytest.fixture
-def mock_os_exists_invalid_path():
-    with mock.patch('os.path.exists') as mock_exists:
-        mock_exists.return_value = False
-        yield
-
-
-@pytest.fixture
-def mock_os_exists_valid_path():
-    with mock.patch('os.path.exists') as mock_exists:
-        mock_exists.return_value = True
-        yield
 
 
 @pytest.fixture
@@ -89,13 +75,13 @@ def test_clean_data1(sample_data, caplog):
     assert not data.loc[data['Death Rate'].isnull(), 'Death Rate'].tolist()
 
 
-def test_get_data_with_invalid_path_raises_exception(mock_os_exists_invalid_path):
+def test_get_data_with_invalid_path_raises_exception():
     with pytest.raises(Exception):
         get_data(path='invalid_path.csv')
 
 
 def test_get_data_with_valid_path_returns_dataframe(
-        data_url, mock_os_exists_valid_path, mock_pd_read_csv
+        data_url, mock_pd_read_csv
 ):
     df = mock_pd_read_csv(data_url)
     df = pd.DataFrame(df)
