@@ -1,8 +1,15 @@
 import os
 import inspect
+import platform
+
 from directories import Path, Url
 
-__root__ = inspect.getfile(Path).replace('/directories.py', '')
+dir_path = inspect.getfile(Path)
+if platform.system() == 'Windows':
+    file_name = '\\directories.py'
+else:
+    file_name = '/directories.py'
+__root__ = dir_path.replace(file_name, '')
 
 
 def test_root():
