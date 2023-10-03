@@ -6,7 +6,7 @@ This document outlines the steps to create a Python environment from an existing
 - [Python Virtual Environment Setup with conda env](#python-virtual-environment-setup-with-conda-env)
   - [Create a New Virtual Environment from environment.yml](#create-a-new-virtual-environment-from-environmentyml)
   - [Create a New Virtual Environment from requirements.txt](#create-a-new-virtual-environment-from-requirementstxt)
-- [Prerequisites for Python Virtual Environment Setup with pyenv](#python-virtual-environment-setup-with-pyenv)
+- [Python Virtual Environment Setup with pyenv](#python-virtual-environment-setup-with-pyenv)
   - [Install pyenv](#install-pyenv)
   - [Create a Virtual Environment](#create-a-virtual-environment)
 

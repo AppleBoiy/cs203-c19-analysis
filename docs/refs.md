@@ -2,8 +2,7 @@
 
 ## How to Retrieve Address Location from Latitude and Longitude in Google Maps
 
-- **Link
-  **: [Stack Overflow Thread](https://stackoverflow.com/questions/19511597/how-to-get-address-location-from-latitude-and-longitude-in-google-map#:~:text=Simply%20pass%20latitude%2C%20longitude%20and,fetch%20your%20city%20from%20there.&text=Note%3A%20Ensure%20that%20no%20space,passed%20in%20the%20latlng%20parameter.)
+- **Link**: [Stack Overflow Thread](https://stackoverflow.com/questions/19511597/how-to-get-address-location-from-latitude-and-longitude-in-google-map#:~:text=Simply%20pass%20latitude%2C%20longitude%20and,fetch%20your%20city%20from%20there.&text=Note%3A%20Ensure%20that%20no%20space,passed%20in%20the%20latlng%20parameter.)
 - **Description**: This Stack Overflow thread offers guidance on extracting address location information using latitude
   and longitude coordinates within Google Maps.
 
