@@ -18,4 +18,4 @@
 - **Description**: Explore this GitHub repository to access a style sheet for rendering Markdown content with the
   aesthetics of GitHub, enhancing the visual presentation of Markdown documents.
 
-&copy; 2023 AppleBoiy &bull; [Code of Conduct](../.github/CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
+&copy; 2023 AppleBoiy &bull; [Code of Conduct](../.github/CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../.github/LICENSE)

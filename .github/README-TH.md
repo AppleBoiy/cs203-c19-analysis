@@ -39,4 +39,4 @@
 ---
 Get help: [Post in our discussion board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions)
 
-&copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
+&copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](LICENSE)
