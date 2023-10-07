@@ -6,7 +6,6 @@ folium~=0.14.0
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
-pytest~=7.4.2
 scipy
 ipython
 kaggle
