@@ -74,7 +74,7 @@ For additional references and resources, please check the [refs.md](../docs/refs
   Code of Conduct
   </a> &bull;
   <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-  CC-BY-NC-SA 4.0
+  CC-BY-SA 4.0
   </a>
 </p>
 
