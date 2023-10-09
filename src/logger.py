@@ -12,10 +12,10 @@ class Logger:
         logger = logging.getLogger(__name__)
         logger.setLevel(logging.DEBUG)
 
-        formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s')
+        formatter = logging.Formatter("%(asctime)s - %(levelname)s: %(message)s")
 
         if self.is_write:
-            file_handler = logging.FileHandler('app.log')
+            file_handler = logging.FileHandler("app.log")
             file_handler.setFormatter(formatter)
             logger.addHandler(file_handler)
         elif self.debug:
@@ -29,8 +29,5 @@ class Logger:
         if not self.debug:
             return
 
-        self.logs.update({
-            'level': _type,
-            'message': message
-        })
+        self.logs.update({"level": _type, "message": message})
         getattr(self.console, _type)(message)

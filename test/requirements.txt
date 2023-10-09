@@ -4,3 +4,5 @@ pytest-mock
 requests-mock
 pylint
 flake8
+black
+

@@ -17,9 +17,7 @@ class DataDownloader(Logger):
     def download_data(self, script_path="src/download.sh"):
         try:
             output = subprocess.check_output(
-                ['bash', script_path],
-                stderr=subprocess.STDOUT,
-                universal_newlines=True
+                ["bash", script_path], stderr=subprocess.STDOUT, universal_newlines=True
             )
             self.log("info", "Downloaded data successfully.")
             self.log("debug", output)
@@ -27,8 +25,9 @@ class DataDownloader(Logger):
             self.log("error", f"Error running the shell script: {e}")
 
     def start(self):
-
-        if not glob.glob(os.path.join("data", "coronavirus-covid-19-pandemic-usa-counties.csv")):
+        if not glob.glob(
+            os.path.join("data", "coronavirus-covid-19-pandemic-usa-counties.csv")
+        ):
             self.log("info", "Data not found. Downloading data...")
             self.download_data()
 
@@ -37,8 +36,10 @@ class DataDownloader(Logger):
         if not glob.glob(os.path.join("data", "validated.csv")):
             status, df = self.create_validated_csv()
 
-            if status == 'pass' and df is not None:
-                prompt = f'Data was read successfully from {self.raw_data}\n---\n{df.head()}'
+            if status == "pass" and df is not None:
+                prompt = (
+                    f"Data was read successfully from {self.raw_data}\n---\n{df.head()}"
+                )
                 self.log("info", prompt)
             else:
                 self.log("error", "Error while validating data.")
@@ -52,13 +53,13 @@ class DataDownloader(Logger):
 
         :return: Dataframe that has been validated
         """
-        self.log('info', 'Validating data...')
-        df = pd.read_csv(self.raw_data, sep=';')
-        df.drop('Admin 2 FIPS Code', axis=1, inplace=True)
+        self.log("info", "Validating data...")
+        df = pd.read_csv(self.raw_data, sep=";")
+        df.drop("Admin 2 FIPS Code", axis=1, inplace=True)
 
         missing_rows = df[df.isnull().any(axis=1)]
-        self.log('info', f'Number of rows with missing values: {len(missing_rows)}')
-        self.log('debug', f"Sample null:--\n---\n {df.isnull().sum()} \n---\n")
+        self.log("info", f"Number of rows with missing values: {len(missing_rows)}")
+        self.log("debug", f"Sample null:--\n---\n {df.isnull().sum()} \n---\n")
 
         return df
 
@@ -68,14 +69,14 @@ class DataDownloader(Logger):
         - This will create a new csv file that has been validated
         and drop the column 'Admin 2 FIPS Code' and also change the seperator from ';' to ','.
         """
-        self.log('info', 'Creating validated CSV...')
+        self.log("info", "Creating validated CSV...")
         try:
             df = self.validate()
             df.to_csv(self.validated_csv, index=False)
-            self.log('info', 'Validated CSV created successfully.')
-            return 'pass', df
+            self.log("info", "Validated CSV created successfully.")
+            return "pass", df
         except FileNotFoundError as e:
-            self.log('error', f'Error while creating validated CSV: {e}')
+            self.log("error", f"Error while creating validated CSV: {e}")
             return e, None
 
     @property

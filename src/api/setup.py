@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 from src.api import create_fips_csv
 
-LOG = \
-    """
+LOG = """
 What's the purpose of this file?:
 
     This file is used to create a csv file that contains all the fips code for each state in the US
@@ -23,5 +22,5 @@ def main():
 if __name__ == "__main__":
     print(LOG, end="")
     res = input()
-    if res.lower() == 'y':
+    if res.lower() == "y":
         main()
