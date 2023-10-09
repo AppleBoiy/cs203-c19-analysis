@@ -26,18 +26,18 @@ def test_setup_logger_debug(logger):
 
 def test_log_debug_true(logger, caplog):
     logger.debug = True
-    logger.log('info', 'test message')
-    assert 'test message' in caplog.text
+    logger.log("info", "test message")
+    assert "test message" in caplog.text
 
 
 def test_log_debug_false(logger, caplog):
     logger.debug = False
-    logger.log('info', 'test message')
-    assert 'test message' not in caplog.text
+    logger.log("info", "test message")
+    assert "test message" not in caplog.text
 
 
 def test_log_debug_true_write_true(logger, caplog):
     logger.debug = True
     logger.is_write = True
-    logger.log('info', 'test message')
-    assert 'test message' in caplog.text
+    logger.log("info", "test message")
+    assert "test message" in caplog.text

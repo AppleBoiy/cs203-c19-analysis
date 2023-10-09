@@ -9,7 +9,7 @@ from src.api.gdrive import get_url
 
 
 def fips_csv():
-    file = 'country_fips.csv'
+    file = "country_fips.csv"
     return os.path.join(Path.DATA.value, file)
 
 
@@ -32,10 +32,10 @@ def create_fips_csv(return_df=False):
 def get_fips(name):
     try:
         df = pd.read_csv(fips_csv())
-        fips = df[df['NAME'] == name]
+        fips = df[df["NAME"] == name]
         return fips
     except IndexError:
-        print(f'Error: {name} not found')
+        print(f"Error: {name} not found")
         return None
 
 
@@ -45,7 +45,7 @@ def get_data(path=None) -> pd.DataFrame:
             path = fips_csv()
 
         # Check if the 'file' is a URL or a local file path
-        if path.startswith('http') or path.startswith('https'):
+        if path.startswith("http") or path.startswith("https"):
             response = requests.get(path, timeout=10)
             response.raise_for_status()
             df = pd.read_csv(response.text)
@@ -62,5 +62,5 @@ def get_data(path=None) -> pd.DataFrame:
         raise e
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     create_fips_csv()

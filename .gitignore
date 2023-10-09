@@ -184,9 +184,8 @@ xcuserdata/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 ## dataset ##
-*.zip
-*.csv
 *.key
+*.csv
 
 ## logs ##
 *.log
