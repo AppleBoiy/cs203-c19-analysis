@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('../../data/data.csv')
+df = pd.read_csv('../../../data/data.csv')
 # from ranking2
 top_5_C = ['California', 'Texas', 'Florida', 'New York', 'Illinois']
 less_5_C = ['Vermont', 'District of Columbia', 'Wyoming', 'South Dakota', 'North Dakota']
