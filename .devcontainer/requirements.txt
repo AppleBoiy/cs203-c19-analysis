@@ -5,4 +5,4 @@ requests-mock
 pylint
 flake8
 black
-
+black[jupyter] # for jupyter notebooks
