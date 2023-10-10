@@ -1,0 +1,9 @@
+code/B_preparation/Data_type.ipynb
+code/B_preparation/Fix_header.ipynb
+code/B_preparation/remove_dup.ipynb
+code/B_preparation/remove_missing.ipynb
+code/visual/dist/..
+code/Z_playground/visual/data.ipynb
+code/Z_playground/visual/handle.py
+code/Z_playground/PTCTEST1.ipynb
+code/Z_playground/PTCTEST2.ipynb
