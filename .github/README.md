@@ -41,7 +41,7 @@ These prerequisites are essential to efficiently work with the data and leverage
 ## Thai Language README
 
 For Thai speakers, we provide a dedicated README in the Thai language.
-Please refer to [README-TH.md](README-TH.md) for the Thai version of this documentation.
+Please refer to [README-TH.md](../README-TH.md) for the Thai version of this documentation.
 
 ## Contributors
 

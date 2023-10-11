@@ -1,6 +1,6 @@
 # ชุดข้อมูล Coronavirus Covid-19 ของประเทศสหรัฐอเมริกา
 
-> **For `README.md` in English, please see [README.md](README.md)**
+> **For `README.md` in English, please see [README.md](.github/README.md)**
 
 ข้อมูล [Coronavirus Covid-19](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties)
 เป็นชุดข้อมูลที่รวบรวมข้อมูลการติดเชื้อโควิด-19 ในประเทศสหรัฐอเมริกา โดยมีข้อมูลดังนี้
@@ -11,13 +11,16 @@
 - เมือง / รัฐที่ทำการบันทึกข้อมูล
 - ตำแหน่งที่ตั้ง (`Latitude (ละติจูด)` , `Longitude (ลองจิจูด)`)
 
-คำแนะนำอย่างละเอียดอ่านต่อที่ [prerequisites.md](../docs/prerequisites.md) (เป็นภาษาอังกฤษ)
+คำแนะนำอย่างละเอียดอ่านต่อที่ [prerequisites.md](docs/prerequisites.md) (เป็นภาษาอังกฤษ)
 
 ## สามาชิก
 
-- นาย กังวานทรัพย์ แซ่ลี้ (ก้อง) data vitualize และ หา/ทำความสะอาดชุดข้อมูลเพิ่มเติมที่ใช้ในการเปรียบเทียบ
-- นาย ปองภพ เชื้อประเสริฐศักดิ์ (พัตเตอร์) data vitualize นำเสนอในรูปกราฟแท่ง
-- นาย ชัยภัทร ใจน่าน (ไอซ์) QA/Testing, Document writer and Data Analysts
+- นาย กังวานทรัพย์ แซ่ลี้ (ก้อง)
+    - files ที่รับผิดชอบ [here](docs/job/KonGKerDvD)
+- นาย ปองภพ เชื้อประเสริฐศักดิ์ (พัตเตอร์)
+    - files ที่รับผิดชอบ [here](docs/job/PutterTh)
+- นาย ชัยภัทร ใจน่าน (ไอซ์)
+    - files ที่รับผิดชอบ [here](docs/job/AppleBoiy)
 
 ## ประกาศ
 
@@ -39,4 +42,4 @@
 ---
 Get help: [Post in our discussion board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions)
 
-&copy; 2023 AppleBoiy &bull; [Code of Conduct](CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
+&copy; 2023 AppleBoiy &bull; [Code of Conduct](.github/CODE_OF_CONDUCT.md) &bull; [CC-BY-SA-4.0](LICENSE)

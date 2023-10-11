@@ -1,0 +1,15 @@
+# development
+.devcontainer/
+.github/workflows/
+
+# documentation
+.github/*.md
+docs/
+
+# source code
+src/
+test/
+
+# Data analysis
+code/A_collection/
+code/C_exploration/
