@@ -1,15 +1,13 @@
-# development
-.devcontainer/
-.github/workflows/
+# Data Analysis
+code/A_collection
+code/C_exploration
+code/D_prediction
 
-# documentation
-.github/*.md
-docs/
 
-# source code
-src/
-test/
-
-# Data analysis
-code/A_collection/
-code/C_exploration/
+# Additional Code
+# code/Z_playground
+#
+# ***Automation, Data cleaning and Unit testing may found in `code/Z_playground`
+# for some reason I don't want to put them in the main code folder
+# but they are still important for the project development
+# Please reach out to `AppleBoiy` for further details or clarifications.***
