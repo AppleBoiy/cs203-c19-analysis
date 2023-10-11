@@ -1,28 +1,31 @@
 # Python Environment Setup
 
-This document outlines the steps to create a Python environment from an existing configuration file (`environment.yml` or `requirements.txt`). These steps will help you set up the necessary dependencies for your Python project.
+This document outlines the steps to create a Python environment from an existing configuration file (`environment.yml`
+or `requirements.txt`). These steps will help you set up the necessary dependencies for your Python project.
 
 # Table of Contents
-- [Python Virtual Environment Setup with conda env](#python-virtual-environment-setup-with-conda-env)
-  - [Create a New Virtual Environment from environment.yml](#create-a-new-virtual-environment-from-environmentyml)
-  - [Create a New Virtual Environment from requirements.txt](#create-a-new-virtual-environment-from-requirementstxt)
-- [Python Virtual Environment Setup with pyenv](#python-virtual-environment-setup-with-pyenv)
-  - [Install pyenv](#install-pyenv)
-  - [Create a Virtual Environment](#create-a-virtual-environment)
 
+- [Python Virtual Environment Setup with conda env](#python-virtual-environment-setup-with-conda-env)
+    - [Create a New Virtual Environment from environment.yml](#create-a-new-virtual-environment-from-environmentyml)
+    - [Create a New Virtual Environment from requirements.txt](#create-a-new-virtual-environment-from-requirementstxt)
+- [Python Virtual Environment Setup with pyenv](#python-virtual-environment-setup-with-pyenv)
+    - [Install pyenv](#install-pyenv)
+    - [Create a Virtual Environment](#create-a-virtual-environment)
 
 ## Python Virtual Environment Setup with `conda env`
+
 ### Create a New Virtual Environment from environment.yml
 
 1. **Activate Conda (if not already activated):**
    If you haven't activated Conda, open a terminal or command prompt and activate it by running:
-   
+
    ```bash
    conda activate
    ```
 
 2. **Create a New Conda Environment:**
-   To create a new Conda environment from an existing `environment.yml` file, navigate to the directory containing the `environment.yml` file and run:
+   To create a new Conda environment from an existing `environment.yml` file, navigate to the directory containing
+   the `environment.yml` file and run:
 
    ```bash
    conda env create -f environment.yml
@@ -70,11 +73,10 @@ This document outlines the steps to create a Python environment from an existing
    Navigate to the directory containing the `requirements.txt` file and run:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r dev-requirements.txt
    ```
 
    This will install the Python packages listed in the `requirements.txt` file.
-
 
 ## Python Virtual Environment Setup with `pyenv`
 
@@ -82,13 +84,15 @@ This document outlines the steps to create a Python environment from an existing
 
 1. **Install `pyenv` (if not already installed):**
 
-   If you haven't installed `pyenv` on your system, you can follow the official installation instructions for your operating system: [pyenv Installation](https://github.com/pyenv/pyenv#installation).
+   If you haven't installed `pyenv` on your system, you can follow the official installation instructions for your
+   operating system: [pyenv Installation](https://github.com/pyenv/pyenv#installation).
 
 ## Create a Virtual Environment
 
 2. **Install the Desired Python Version:**
 
-   Use `pyenv` to install the Python version you want to use for your virtual environment. Replace `<python_version>` with the Python version you prefer:
+   Use `pyenv` to install the Python version you want to use for your virtual environment. Replace `<python_version>`
+   with the Python version you prefer:
 
    ```bash
    pyenv install <python_version>
@@ -96,14 +100,14 @@ This document outlines the steps to create a Python environment from an existing
 
 3. **Create a Python Virtual Environment:**
 
-   Create a new Python virtual environment using `pyenv`. You can name your environment as desired, replacing `<env_name>` with a suitable name:
+   Create a new Python virtual environment using `pyenv`. You can name your environment as desired,
+   replacing `<env_name>` with a suitable name:
 
    ```bash
    pyenv virtualenv <python_version> <env_name>
    ```
 
-
-   This command creates a virtual environment named `myenv` using the specified Python version.
+This command creates a virtual environment named `myenv` using the specified Python version.
 
 4. **Activate the Virtual Environment:**
 
@@ -117,7 +121,8 @@ This document outlines the steps to create a Python environment from an existing
 
 5. **Navigate to Your Project Directory:**
 
-   Use the `cd` command to navigate to the directory where your Python project and the `requirements.txt` file are located:
+   Use the `cd` command to navigate to the directory where your Python project and the `requirements.txt` file are
+   located:
 
    ```bash
    cd /path/to/your/project
@@ -128,7 +133,7 @@ This document outlines the steps to create a Python environment from an existing
    While your virtual environment is activated, use `pip` to install the packages listed in the `requirements.txt` file:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r dev-requirements.txt
    ```
 
 This will install the required Python packages into your virtual environment.
