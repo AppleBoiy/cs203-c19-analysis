@@ -36,12 +36,6 @@ The data was collected between 2020 and 2022 (and not updated since then).
 - **Location**: Geographical coordinates (latitude and longitude) representing the location of the administrative
   region.
 
-## Prerequisites
-
-Before utilizing this dataset[^3], ensure you have the necessary prerequisites in place.
-Detailed instructions for setup can be found in the [prerequisites.md](../docs/prerequisites.md).
-These prerequisites are essential to efficiently work with the data and leverage the project effectively.
-
 ## Contributors
 
 - **Kungwansup Saelee** [`KonGKerDvD`](https://github.com/KonGKerDvD)
@@ -54,7 +48,7 @@ These prerequisites are essential to efficiently work with the data and leverage
 dataset[^3].    
 They[^2] assume no responsibility for any disputes or issues that may arise from its usage.
 Users are strongly encouraged to adhere to the licensing terms of the dataset and,
-when necessary, provide appropriate attribution to the dataset creators[^4].
+when necessary, provide appropriate attribution to the dataset creators.
 
 ### Additional Resources
 
@@ -87,17 +81,9 @@ the [Department of Computer Science, Faculty of Science at Chiang Mai University
 acknowledged as authors. For a comprehensive and detailed list of all contributors, please refer to the
 dedicated [Contributors](#contributors) section.
 [^3]: The dataset used in this project, titled ["Corona Virus Covid-19 US Counties"][Dataset url],
-is open-source and provided by [Yasir Raza][Yasir Kaggle][^4] via [Kaggle][Kaggle].
-It is distributed under the [CC0: Public Domain][CC0: Public Domain][^6] license.
-[^4]: [Yasir Raza][Yasir Kaggle], an expert on [Kaggle][Kaggle][^5], is the original dataset creator.
-[^5]: [Kaggle][Kaggle] is a data science competition platform and online community of data scientists and machine
-learning practitioners
-under [Google LLC](https://en.wikipedia.org/wiki/Google).
-[^6]: The [CC0: Public Domain][CC0: Public Domain] license signifies a generous dedication by the authors to the public
-domain.
-It allows creators to relinquish all rights to their works, making them freely available for any purpose, including
-commercial use,
-without any encumbrances.
+is open-source and provided by [Yasir Raza][Yasir Kaggle] via [Kaggle][Kaggle].
+It is distributed under the [CC0: Public Domain][CC0: Public Domain] license.
+
 
 <!-- external links -->
 

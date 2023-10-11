@@ -11,3 +11,4 @@ ipython~=8.16.1
 kaggle~=1.5.16
 jupyter~=1.0.0
 seaborn~=0.13.0
+geopandas~=0.14.0
