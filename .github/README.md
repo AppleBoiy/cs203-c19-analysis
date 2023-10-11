@@ -36,12 +36,6 @@ The data was collected between 2020 and 2022 (and not updated since then).
 - **Location**: Geographical coordinates (latitude and longitude) representing the location of the administrative
   region.
 
-## Prerequisites
-
-Before utilizing this dataset[^3], ensure you have the necessary prerequisites in place.
-Detailed instructions for setup can be found in the [prerequisites.md](../docs/prerequisites.md).
-These prerequisites are essential to efficiently work with the data and leverage the project effectively.
-
 ## Contributors
 
 - **Kungwansup Saelee** [`KonGKerDvD`](https://github.com/KonGKerDvD)
