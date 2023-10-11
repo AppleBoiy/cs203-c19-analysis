@@ -4,7 +4,7 @@ import subprocess
 
 import pandas as pd
 
-from directories import Path
+from code.Z_playground.directories import Path
 from src.logger import Logger
 
 

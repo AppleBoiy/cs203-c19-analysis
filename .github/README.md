@@ -9,6 +9,11 @@
 
 [//]: # (> The graph above shows the ranking of US counties &#40;sorted by total confirmed cases&#41; from 2020 to 2022.)
 
+## Thai Language README
+
+For Thai speakers, we provide a dedicated README in the Thai language.
+Please refer to [README-TH.md](../README-TH.md) for the Thai version of this documentation.
+
 ## Introduction
 
 This project is a part of CS203[^1], designed for computer science students, including the project authors[^2].
@@ -37,11 +42,6 @@ The data was collected between 2020 and 2022 (and not updated since then).
 Before utilizing this dataset[^3], ensure you have the necessary prerequisites in place.
 Detailed instructions for setup can be found in the [prerequisites.md](../docs/prerequisites.md).
 These prerequisites are essential to efficiently work with the data and leverage the project effectively.
-
-## Thai Language README
-
-For Thai speakers, we provide a dedicated README in the Thai language.
-Please refer to [README-TH.md](../README-TH.md) for the Thai version of this documentation.
 
 ## Contributors
 

@@ -4,8 +4,8 @@ from urllib.error import URLError
 import requests
 import pandas as pd
 
-from directories import Path
-from src.api.gdrive import get_url
+from code.Z_playground.directories import Path
+from code.Z_playground.src.api.gdrive import get_url
 
 
 def fips_csv():

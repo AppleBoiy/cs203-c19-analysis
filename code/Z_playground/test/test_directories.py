@@ -2,7 +2,7 @@ import os
 import inspect
 import platform
 
-from directories import Path, Url
+from code.Z_playground.directories import Path, Url
 
 dir_path = inspect.getfile(Path)
 if platform.system() == "Windows":

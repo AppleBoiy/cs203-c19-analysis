@@ -1,4 +1,4 @@
-from directories import Path
+from code.Z_playground.directories import Path
 from src.downloader import DataDownloader
 from src.data_handler import validator, clean_data
 

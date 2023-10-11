@@ -4,8 +4,8 @@ from unittest import mock
 import pandas as pd
 import pytest
 
-from directories import Url
-from src.api.gdrive import get_url
+from code.Z_playground.directories import Url
+from code.Z_playground.src.api.gdrive import get_url
 from src.data_handler import validator, clean_data, get_data
 
 

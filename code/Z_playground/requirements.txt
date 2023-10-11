@@ -1,0 +1,13 @@
+numpy~=1.26.0
+matplotlib~=3.8.0
+pandas~=2.1.1
+requests~=2.31.0
+folium~=0.14.0
+google-api-python-client~=2.101.0
+google-auth-httplib2~=0.1.1
+google-auth-oauthlib~=1.1.0
+scipy~=1.11.3
+ipython~=8.16.1
+kaggle~=1.5.16
+jupyter~=1.0.0
+seaborn~=0.13.0

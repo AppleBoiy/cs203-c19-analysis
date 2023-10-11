@@ -3,7 +3,7 @@ import os
 
 import pandas as pd
 
-from src.api.gdrive import get_url
+from code.Z_playground.src.api.gdrive import get_url
 
 LOG = """
 This action is used to validate and clean the data by remove the missing value and duplicate value.
