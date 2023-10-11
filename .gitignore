@@ -185,7 +185,7 @@ xcuserdata/
 
 ## dataset ##
 *.key
-*.csv
+data/*.csv
 
 ## logs ##
 *.log
