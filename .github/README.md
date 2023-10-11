@@ -1,6 +1,5 @@
 # Exploring COVID-19 Data in US Counties
 
-[![Testing and Linting][Testing and Linting badge]][Testing and Linting url]
 [![Quality Gate Status][Quality Gate badge]][Quality Gate url]
 [![Code Smells][Code Smells badge]][Code Smells url]
 [![codecov][codecov badge]][codecov url]
