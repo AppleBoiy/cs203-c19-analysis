@@ -1,8 +1,0 @@
-pytest
-pytest-cov
-pytest-mock
-requests-mock
-pylint
-flake8
-black
-black[jupyter] # for jupyter notebooks

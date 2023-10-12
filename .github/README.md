@@ -54,7 +54,7 @@ when necessary, provide appropriate attribution to the dataset creators.
 
 For additional references and resources, please check the [refs.md](../docs/refs.md) file.
 
-- [FAQ](../docs/FAQ.md): Frequently asked questions and answers.
+- [FAQ](../code/Z_playground/docs/FAQ.md): Frequently asked questions and answers.
 - [Discussion Board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions): Get help and engage with the project
   community.
 

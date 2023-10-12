@@ -1,17 +1,22 @@
-# ชุดข้อมูล Coronavirus Covid-19 ของประเทศสหรัฐอเมริกา
+# Exploring COVID-19 Data in US Counties
+
+[![Quality Gate Status][Quality Gate badge]][Quality Gate url]
+[![Code Smells][Code Smells badge]][Code Smells url]
+[![codecov][codecov badge]][codecov url]
+
 
 > **For `README.md` in English, please see [README.md](.github/README.md)**
 
 ข้อมูล [Coronavirus Covid-19](https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties)
 เป็นชุดข้อมูลที่รวบรวมข้อมูลการติดเชื้อโควิด-19 ในประเทศสหรัฐอเมริกา โดยมีข้อมูลดังนี้
 
+- วันที่บันทึกข้อมูล
+- FIPS (Federal Information Processing Standards) รหัสที่ใช้ระบุเมือง / รัฐ
 - จำนวนผู้ติดเชื้อยืนยัน
 - จำนวนผู้เสียชีวิต
-- จำนวนผู้ที่ฟื้นตัวจากโรคติดเชื้อโควิด-19
 - เมือง / รัฐที่ทำการบันทึกข้อมูล
 - ตำแหน่งที่ตั้ง (`Latitude (ละติจูด)` , `Longitude (ลองจิจูด)`)
 
-คำแนะนำอย่างละเอียดอ่านต่อที่ [prerequisites.md](code/Z_playground/docs/prerequisites.md) (เป็นภาษาอังกฤษ)
 
 ## สามาชิก
 
@@ -22,7 +27,7 @@
 - นาย ชัยภัทร ใจน่าน (ไอซ์)
     - files ที่รับผิดชอบ [here](docs/job/AppleBoiy)
 
-## ประกาศ
+## Acknowledgements
 
 การใช้ชุดข้อมูล `yasirabdaali/corona-virus-covid19-us-counties`
 ในโปรเจคนี้ขึ้นอยู่กับข้อกำหนดและเงื่อนไขของการอนุญาตของชุดข้อมูลเอง
@@ -43,3 +48,36 @@
 Get help: [Post in our discussion board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions)
 
 &copy; 2023 AppleBoiy &bull; [Code of Conduct](.github/CODE_OF_CONDUCT.md) &bull; [CC-BY-SA-4.0](LICENSE)
+
+
+<!-- external links -->
+
+[CMU url]: https://www.cmu.ac.th/en/
+
+[CSCMU url]: http://cs.science.cmu.ac.th/en/
+
+[Dataset url]: https://www.kaggle.com/datasets/yasirabdaali/corona-virus-covid19-us-counties
+
+[Yasir Kaggle]: https://www.kaggle.com/yasirabd
+
+[Kaggle]: https://www.kaggle.com/
+
+[CC0: Public Domain]: https://creativecommons.org/publicdomain/zero/1.0/
+
+<!-- badges -->
+
+[Quality Gate badge]: https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=alert_status
+
+[Quality Gate url]: https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203
+
+[Code Smells badge]: https://sonarcloud.io/api/project_badges/measure?project=AppleBoiy_Covid-19US-CS203&metric=code_smells
+
+[Code Smells url]: https://sonarcloud.io/summary/new_code?id=AppleBoiy_Covid-19US-CS203
+
+[codecov badge]: https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023/branch/main/graph/badge.svg
+
+[codecov url]: https://codecov.io/gh/AppleBoiy/cs203-covid19-analysis-2023
+
+[Testing and Linting badge]: https://github.com/AppleBoiy/cs203-covid19-analysis-2023/actions/workflows/testing-linting.yml/badge.svg
+
+[Testing and Linting url]: https://github.com/AppleBoiy/cs203-covid19-analysis-2023/actions/workflows/testing-linting.yml
