@@ -47,7 +47,7 @@
 ---
 Get help: [Post in our discussion board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions)
 
-&copy; 2023 AppleBoiy &bull; [Code of Conduct](.github/CODE_OF_CONDUCT.md) &bull; [CC-BY-SA-4.0](LICENSE)
+&copy; 2023 AppleBoiy &bull; [Code of Conduct](.github/CODE_OF_CONDUCT.md) &bull; [MIT](LICENSE)
 
 
 <!-- external links -->

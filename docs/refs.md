@@ -30,4 +30,4 @@
 - **Link**: [PubMed Central Article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8782469/#:~:text=In%20response%20to%20the%20COVID,largely%20believed%20to%20have%20passed.)
 - **Description**: Read a retrospective cost-benefit analysis of lives saved and lost in the first six months of the US COVID-19 pandemic in this PubMed Central article.
 
-&copy; 2023 AppleBoiy &bull; [Code of Conduct](../.github/CODE_OF_CONDUCT.md) &bull; [GPL-3.0 license](../LICENSE)
+&copy; 2023 AppleBoiy &bull; [Code of Conduct](../.github/CODE_OF_CONDUCT.md) &bull; [MIT](../LICENSE)

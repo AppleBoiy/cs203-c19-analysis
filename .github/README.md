@@ -55,18 +55,7 @@ For additional references and resources, please check the [refs.md](../docs/refs
 - [Discussion Board](https://github.com/AppleBoiy/Covid-19US-CS203/discussions): Get help and engage with the project
   community.
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-  © 2023
-  <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/AppleBoiy">
-  AppleBoiy 
-  </a> &bull; 
-  <a href="https://github.com/AppleBoiy/cs203-covid19-analysis-2023/blob/main/.github/CODE_OF_CONDUCT.md" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-  Code of Conduct
-  </a> &bull;
-  <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-  CC-BY-SA 4.0
-  </a>
-</p>
+&copy; AppleBoiy &bull; [Code of Conduct](../.github/CODE_OF_CONDUCT.md) &bull; [MIT](../LICENSE)
 
 
 
