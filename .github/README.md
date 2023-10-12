@@ -8,10 +8,7 @@
 
 [//]: # (> The graph above shows the ranking of US counties &#40;sorted by total confirmed cases&#41; from 2020 to 2022.)
 
-## Thai Language README
-
-For Thai speakers, we provide a dedicated README in the Thai language.
-Please refer to [README-TH.md](../README-TH.md) for the Thai version of this documentation.
+> For my teacher, please see [README-TH.md](../readme.md).
 
 ## Introduction
 
@@ -33,7 +30,7 @@ The data was collected between 2020 and 2022 (and not updated since then).
 - **Date**: The date of the recorded data.
 - **Total Death**: The total number of COVID-19-related deaths reported on the specified date.
 - **Total Confirmed**: The total number of confirmed COVID-19 cases reported on the specified date.
-- **Location**: Geographical coordinates (latitude and longitude) representing the location of the administrative
+- **Location**: Geographical coordinates (longitude and latitude) representing the location of the administrative
   region.
 
 ## Contributors
