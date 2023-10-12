@@ -8,7 +8,7 @@
 
 [//]: # (> The graph above shows the ranking of US counties &#40;sorted by total confirmed cases&#41; from 2020 to 2022.)
 
-> For my teacher, please see [README-TH.md](../readme.md).
+> For my teacher, please see [thai version](../readme.md)
 
 ## Introduction
 
