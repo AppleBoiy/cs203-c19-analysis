@@ -1,7 +1,11 @@
 # Data Analysis
-code/A_collection
-code/C_exploration
-code/D_prediction
+code/A_collection/
+code/C_exploration/
+code/D_prediction/
+
+code/B_preparation/1_assemble.ipynb
+code/B_preparation/2_missing_value.ipynb
+
 
 
 # Additional Code

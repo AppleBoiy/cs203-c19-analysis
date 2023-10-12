@@ -1,9 +1,8 @@
-code/Z_playground/ranking.ipynb
-code/Z_playground/ranking2.ipynb
-code/Z_playground/Test.ipynb
-data/data2020.csv
-data/rankingConfirmed.csv
-data/rankingDeath.csv
-data/sp2020.csv
-data/sp2021.csv
-data/sp2022.csv
+code/B_preparation/1_assemble.ipynb
+code/B_preparation/2_missing_value.ipynb
+code/D_prediction/3_most_deaths_by_city.ipynb
+
+# Additional files
+# code/Z_playground/ranking.ipynb
+# code/Z_playground/ranking2.ipynb
+# code/Z_playground/Test.ipynb
