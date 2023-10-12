@@ -16,6 +16,9 @@ def get_data():
     data = pd.concat(
         [pd.read_csv(f"{data_dir}/{file}") for file in files], ignore_index=True
     )
+    data["date"] = pd.to_datetime(data["date"])
+    data["cases"] = data["cases"].astype("int")
+    data["death"] = data["death"].astype("int")
     return data
 
 
