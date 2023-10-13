@@ -8,7 +8,7 @@
 
 [//]: # (> The graph above shows the ranking of US counties &#40;sorted by total confirmed cases&#41; from 2020 to 2022.)
 
-> For my teacher, please see [thai version](../readme.md)
+> For my teacher, please see [thai version][thai version].
 
 ## Introduction
 
@@ -84,6 +84,8 @@ It is distributed under the [CC0: Public Domain][CC0: Public Domain] license.
 [Kaggle]: https://www.kaggle.com/
 
 [CC0: Public Domain]: https://creativecommons.org/publicdomain/zero/1.0/
+
+[thai version]: https://github.com/AppleBoiy/cs203-c19-analysis/blob/main/readme-th.md
 
 <!-- badges -->
 
