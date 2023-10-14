@@ -85,7 +85,7 @@ It is distributed under the [CC0: Public Domain][CC0: Public Domain] license.
 
 [CC0: Public Domain]: https://creativecommons.org/publicdomain/zero/1.0/
 
-[thai version]: https://github.com/AppleBoiy/cs203-c19-analysis/blob/main/readme-th.md
+[thai version]: https://github.com/AppleBoiy/cs203-c19-analysis/blob/main/readme.md
 
 <!-- badges -->
 
